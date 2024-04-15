@@ -63,6 +63,46 @@ function changePlayer() {
 }
 
 function checkWinner(){
+    let winRound = false;
+
+    //checking if any of the win conditions array is satified, matched
+    for(let i = 0; i < winConditions.length; i++)
+    {
+        const condition = winConditions[i]; //getting a condition from the list of conditions
+        //splitting values of the grid into individual cells at the same index of the winCOnditions to check
+        const cellA = options[condition[0]];
+        const cellB = options[condition[1]];
+        const cellC = options[condition[2]];
+
+        //checking for empty spaces in grid
+        if(cellA == "" || cellB == "" || cellC == "")
+        {
+            continue;
+        }
+        //checking if the netered values match
+        if(cellA==cellB && cellB==cellC)
+        {
+            winRound = true;
+            break;
+        }
+
+    }
+
+    if(winRound)
+    {
+        statusText.textContent = `${currentPlayer} wins!`;
+        running = false;
+    }
+    //no spaces left so it is a draw
+    else if(options.includes(""))
+    {
+        statusText.textContent = `Draw match!`;
+        running = false;
+    }
+    else
+    {
+        changePlayer();
+    }
 
 
 
