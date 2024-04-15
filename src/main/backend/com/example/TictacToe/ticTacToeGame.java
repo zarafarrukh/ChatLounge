@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class ticTacToeGame implements ActionListener{
+public class ticTacToeGame implements ActionListener {
 
     Random random = new Random();
     JFrame frame = new JFrame();
@@ -12,6 +12,8 @@ public class ticTacToeGame implements ActionListener{
     JLabel text_field = new JLabel();
     JButton[] buttons = new JButton[9];
     boolean player1_turn;
+    boolean userInChatRoom = false;
+    int playerCount = 0;
     ticTacToeGame() {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(800,800);
@@ -48,7 +50,25 @@ public class ticTacToeGame implements ActionListener{
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+    {
+        // will check if maximum number of players is reached
+        if (playerCount >= 2)
+        {
+            System.out.println("Cannot join the game. Maximum number of players reached (2)");
+            return;
+        }
+
+        // will check if the user is in a chat room before they can play the game
+        if (!userInChatRoom)
+        {
+            System.out.printlm("Join a chat room to play the game!");
+            return;
+        }
+
+        // will increment player count when a player joins
+        playerCount++;
+
         for (int i = 0; i < 9; i++){
             if(e.getSource() ==buttons[i]){
                 if(player1_turn) {

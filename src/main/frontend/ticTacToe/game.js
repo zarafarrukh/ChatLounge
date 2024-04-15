@@ -22,7 +22,7 @@ const winConditions = [
 
 //placeholders
 let gridCells = ["", "", "","", "", "","", "", ""];
-let currentPlayer = "X";
+let currentPlayer = "❤️";
 let running = false; //will change to true when being played
 
 
@@ -59,7 +59,7 @@ function updateCell(cell, index){
 
 function changePlayer() {
     //just changes current player
-    currentPlayer = (currentPlayer == 'X') ? "O" : "X";
+    currentPlayer = (currentPlayer == '❤️') ? "😭" : "❤️";
     statusText.textContent = `${currentPlayer}'s turn`;
 }
 
@@ -123,7 +123,7 @@ function checkWinner(){
 
 function restartGame(){
     //game starts and ends with X if draw
-    currentPlayer = "X";
+    currentPlayer = "❤️";
 
     //resetting grid values
     gridCells = ["", "", "","", "", "","", "", ""];
