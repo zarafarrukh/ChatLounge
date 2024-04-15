@@ -91,8 +91,22 @@ function checkWinner(){
 
     if(winRound)
     {
+
         statusText.textContent = `${currentPlayer} wins!`;
+
+        //triggering confetti
+        const start = () => {
+            setTimeout(function()
+            {
+                confetti.start();
+            });
+        }
+        start();
         running = false;
+
+
+
+
     }
     //no spaces left so it is a draw
     else if(!gridCells.includes(""))
@@ -120,6 +134,21 @@ function restartGame(){
     cells.forEach(cell => cell.textContent = "");
     running = true;
 
-
+    //stopping confettii if on
+    const stop = () => {
+        setTimeout(function()
+        {
+            confetti.stop();
+        });
+    }
+    stop();
 
 }
+
+// function triggerConfetti() {
+//     confetti({
+//         particleCount: 1000,
+//         spread: 100,
+//         origin: { y: 0.6 }
+//     });
+// }
