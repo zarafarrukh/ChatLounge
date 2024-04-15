@@ -58,6 +58,7 @@ function updateCell(cell, index){
 }
 
 function changePlayer() {
+    //just changes current player
     currentPlayer = (currentPlayer == 'X') ? "O" : "X";
     statusText.textContent = `${currentPlayer}'s turn`;
 }
@@ -94,7 +95,7 @@ function checkWinner(){
         running = false;
     }
     //no spaces left so it is a draw
-    else if(gridCells.includes(""))
+    else if(!gridCells.includes(""))
     {
         statusText.textContent = `Draw match!`;
         running = false;
@@ -103,8 +104,6 @@ function checkWinner(){
     {
         changePlayer();
     }
-
-
 
 }
 
