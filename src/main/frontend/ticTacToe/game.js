@@ -21,7 +21,7 @@ const winConditions = [
 ];
 
 //placeholders
-let options = ["", "", "","", "", "","", "", ""];
+let gridCells = ["", "", "","", "", "","", "", ""];
 let currentPlayer = "X";
 let running = false; //will change to true when being played
 
@@ -31,7 +31,7 @@ function initialiseGame(){
 
     //event listener for cells
     cells.forEach(cell => cell.addEventListener("click",cellClicked));
-    restart.addEventListener("click", restartGame());
+    restart.addEventListener("click", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
     running = true;
 
@@ -42,7 +42,7 @@ function cellClicked(){
     const cellIndex = this.getAttribute("cellIndex");
 
     //cehcks if the cell clicked is empty => does nothing if empty
-    if(options[cellIndex] != "" || !running){
+    if(gridCells[cellIndex] != "" || !running){
         return;
     }
 
@@ -52,7 +52,7 @@ function cellClicked(){
 }
 
 function updateCell(cell, index){
-    options[index] = currentPlayer;
+    gridCells[index] = currentPlayer;
     //marks current cell with x or o using standard text
     cell.textContent = currentPlayer;
 }
@@ -70,9 +70,9 @@ function checkWinner(){
     {
         const condition = winConditions[i]; //getting a condition from the list of conditions
         //splitting values of the grid into individual cells at the same index of the winCOnditions to check
-        const cellA = options[condition[0]];
-        const cellB = options[condition[1]];
-        const cellC = options[condition[2]];
+        const cellA = gridCells[condition[0]];
+        const cellB = gridCells[condition[1]];
+        const cellC = gridCells[condition[2]];
 
         //checking for empty spaces in grid
         if(cellA == "" || cellB == "" || cellC == "")
@@ -94,7 +94,7 @@ function checkWinner(){
         running = false;
     }
     //no spaces left so it is a draw
-    else if(options.includes(""))
+    else if(gridCells.includes(""))
     {
         statusText.textContent = `Draw match!`;
         running = false;
@@ -113,7 +113,7 @@ function restartGame(){
     currentPlayer = "X";
 
     //resetting grid values
-    options = ["", "", "","", "", "","", "", ""];
+    gridCells = ["", "", "","", "", "","", "", ""];
 
     statusText.textContent =`${currentPlayer}'s turn!`;
 
