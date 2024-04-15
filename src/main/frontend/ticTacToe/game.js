@@ -59,7 +59,7 @@ function updateCell(cell, index){
 
 function changePlayer() {
     //just changes current player
-    currentPlayer = (currentPlayer == '❤️') ? "😭" : "❤️";
+    currentPlayer = (currentPlayer == '❤️') ? "😼" : "❤️";
     statusText.textContent = `${currentPlayer}'s turn`;
 }
 
