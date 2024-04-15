@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>ChatLounge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<!-- header design -->
+<header class="header">
+  <a href="#" class="projTitle"><img src="img/logo.png" alt="Logo" class="logo">ChatLounge</a>
+
+  <!--Navigation section-->
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <div class="navb">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- home section design -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Web Chat Server</h3>
+    <styledh3Title>ChatLounge <img src="img/coffee.png" alt="Coffee Icon" class="coffeeicon"></styledh3Title>
+    <h3>Crafted By <span class="typed-text"></span></h3>
+  </div>
+
+  <!--Floating logo animation-->
+  <div class="home-img">
+    <img src="img/logo.png" alt="Floating Logo Png">
+  </div>
+</section>
+
+<!-- about section on homepage  -->
+<section class="about" id="about">
+  <div class="about-content">
+    <h2 class="title">Welcome to <styledh3Content>ChatLounge!</styledh3Content></h2>
+    <p>Creating a web chat server with numerous rooms involves constructing a real-time communication system
+      where users can engage in private discussions with their friends or fellow members. Each chat room within the server
+      will have its own group of participants, facilitating discussions effectively. Employing backend technology is imperative
+      for managing communication among users and chat rooms. Utilizing WebSockets enables seamless real-time messaging. In essence,
+      the project fosters secure and user-friendly private communication among users within a platform.</p>
+  </div>
+</section>
+
+<!-- Main Project section -->
+<section class="project" id="project">
+  <h2 class="title">Create or Join a <span>ChatRoom</span></h2>
+  <!-- Chat Rooms List -->
+  <h3>Chat Rooms List</h3>
+  <table id="room-list">
+    <tbody>
+    <!-- Each row represents a chat room code-->
+    <tr data-room="room"></tr>
+    </tbody>
+  </table>
+
+  <!-- Chat box section -->
+  <div class="wrapper">
+    <!-- Button to create a new room-->
+    <button id="createButton" onclick="newRoom()">Create & Join Room</button>
+
+    <!-- Button to leave the current room -->
+    <button id="leaveRoomButton" onclick="leaveRoom()">Leave Room</button>
+
+    <!--Button to refresh chats-->
+    <button id="RefreshChat" onclick="refreshChat()">Refresh Chat</button>
+
+    <!--Room code input section for entering pre existing rooms-->
+    <div class="input-data">
+      <input type="text" id="room-code" required>
+      <label for="room-code">Or join with a room code</label>
+      <div class="underline"></div>
+    </div>
+    <br>
+
+    <!--button to enter already existing room-->
+    <button id="enterButton"><!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
+
+      <a class="cta">
+        <span>ENTER</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </a></button>
+  </div>
+  <textarea title="Chat Log" id="log" readonly class="chat-log"></textarea>
+
+  <!--Bottom section of chat box with message input field-->
+  <div class="wrapper2">
+    <div class="chat-input">
+      <input type="text" id="input" required>
+      <label for="input">Type...</label>
+      <div class="underline"></div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- footer design -->
+<footer class="footer">
+  <div class="footer-text">
+    <h4> CSCI 2020U - Software Systems Development and Integration - Assignment 02.</h4>
+  </div>
+
+  <!--Scroll to Top button-->
+  <div class="footer-ToTop">
+    <a href="#home"><img src = "img/toTop.png" alt = "Scroll to Top" class="toTop">To Top</a>
+  </div>
+</footer>
+
+<!-- typed js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
