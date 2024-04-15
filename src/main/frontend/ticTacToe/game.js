@@ -26,23 +26,45 @@ let currentPlayer = "X";
 let running = false; //will change to true when being played
 
 
+initialiseGame();
 function initialiseGame(){
+
+    //event listener for cells
+    cells.forEach(cell => cell.addEventListener("click",cellClicked));
+    restart.addEventListener("click", restartGame());
+    statusText.textContent = `${currentPlayer}'s turn`;
+    running = true;
 
 }
 
 function cellClicked(){
+    //get cellindex of cell clicked
+    const cellIndex = this.getAttribute("cellIndex");
 
+    //cehcks if the cell clicked is empty => does nothing if empty
+    if(options[cellIndex] != "" || !running){
+        return;
+    }
+
+    //updates cell and checks winner if the clciked cell is filled
+    updateCell(this,cellIndex);
+    checkWinner();
 }
 
 function updateCell(cell, index){
-
+    options[index] = currentPlayer;
+    //marks current cell with x or o using standard text
+    cell.textContent = currentPlayer;
 }
 
 function changePlayer() {
-
+    currentPlayer = (currentPlayer == 'X') ? "O" : "X";
+    statusText.textContent = `${currentPlayer}'s turn`;
 }
 
 function checkWinner(){
+
+
 
 }
 
