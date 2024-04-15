@@ -1,5 +1,5 @@
 // getting values
-const cells = document.querySelector(".cell");
+const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText");
 const restart = document.querySelector("#restartButton");
 
@@ -109,5 +109,18 @@ function checkWinner(){
 }
 
 function restartGame(){
+    //game starts and ends with X if draw
+    currentPlayer = "X";
+
+    //resetting grid values
+    options = ["", "", "","", "", "","", "", ""];
+
+    statusText.textContent =`${currentPlayer}'s turn!`;
+
+    //clearing cells
+    cells.forEach(cell => cell.textContent = "");
+    running = true;
+
+
 
 }
