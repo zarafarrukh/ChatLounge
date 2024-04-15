@@ -88,6 +88,14 @@
     <!--Button to refresh chats-->
     <button id="RefreshChat" onclick="refreshChat()">Refresh Chat</button>
 
+    <!-- Button to link to the Tic Tac Toe game -->
+    <button id="playTicTacToe">Play Tic Tac Toe</button>
+    <script>
+      document.getElementById('playTicTacToe').addEventListener('click', function() {
+        window.location.href = 'ticTacToe/indexGame.html';
+      });
+    </script>
+
     <!--Room code input section for entering pre existing rooms-->
     <div class="input-data">
       <input type="text" id="room-code" required>
