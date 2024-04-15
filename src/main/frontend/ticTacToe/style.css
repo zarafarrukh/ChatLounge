@@ -1,21 +1,63 @@
-.cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow:  0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
 
-#gameContainer{
-    font-family: "cursive", "Copperplate Gothic Bold";
+#gameContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
     text-align: center;
 }
 
-#cellContainer{
-    display : grid;
-    grid-template-columns: repeat(3,auto);
-    width: 225px;
-    margin: auto;
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
 }
