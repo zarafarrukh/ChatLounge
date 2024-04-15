@@ -653,6 +653,35 @@ a {
 .cta:active {
     transform: scale(0.96); }
 
+
+
+/*Play tic tac toe game button*/
+#playTicTacToe {
+    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
+    border: 2px solid var(--main-color);
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#playTicTacToe:hover {
+    background: linear-gradient(to bottom, #dc4b4b 0%, #dc4b4b 100%);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#playTicTacToe:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
+}
+
 /*Chat box*/
 
 .chat-log {
