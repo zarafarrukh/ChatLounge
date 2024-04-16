@@ -12,7 +12,7 @@ public class ticTacToeGame implements ActionListener {
     JLabel text_field = new JLabel();
     JButton[] buttons = new JButton[9];
     boolean player1_turn;
-    boolean userInChatRoom = false;
+    boolean iChatRoom = false;
     int playerCount = 0;
     ticTacToeGame() {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -60,9 +60,9 @@ public class ticTacToeGame implements ActionListener {
         }
 
         // will check if the user is in a chat room before they can play the game
-        if (!userInChatRoom)
+        if (!inChatRoom)
         {
-            System.out.printlm("Join a chat room to play the game!");
+            System.out.println("Join a chat room to play the game!");
             return;
         }
 

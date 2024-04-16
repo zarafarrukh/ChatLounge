@@ -78,6 +78,7 @@ public class ChatServer
 
         // will set the user as in chat room
         userInChatRoom.put(session.getId(), true);
+        System.out.println("User " + session.getId() + " joined the chat room. userInchatRoom set to true: " + userInChatRoom.get(session.getId()));
     }
 
     /**
