@@ -1,49 +1,32 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const form = document.querySelector('form');
-    const wordDisplay = document.querySelector("#wordDisplay");
-    const message = document.querySelector('#message');
+const words = ["apple", "banana", "cherry", "date", "watermelon"];
+let currentWord = "";
+let scrambledWord = "";
 
-    function setUpWebSocket() {
-        const socket = new WebSocket('ws://localhost:8080');
+function scrambleWord(word){
+    return word.split('').sort(()=>Math.random()-0.5).join('');
+}
 
-        socket.onopen = function () {
-            console.log("Socket has been opened");
-            socket.send('start');
-        };
+function startGame(){
+    const randomIndex = Math.floor(Math.random()*words.length);
+    currentWord = words[randomIndex];
+    scrambledWord = scrambleWord(currentWord);
+    document.getElementById('wordDisplay').textContent = scrambledWord;
+    document.getElementById('message').textContent = '';
+    document.getElementById('guessInput').value = '';
+}
 
-        socket.onmessage = function (event) {
-            const data = JSON.parse(event.data);
-            if (data.scrambled) {
-                wordDisplay.textContent = data.scrambled;
-                message.textContent = 'Guess the word';
-            } else if (data.correct) {
-                message.textContent = `Correct! The word was ${data.word}.`;
-            } else {
-                message.textContent = 'Wrong! Try again!';
-            }
-        }
-
-        socket.onclose = function () {
-            console.log("Web socket connection closed.");
-        }
-
-        socket.onerror = function (error) {
-            console.error("Web socket error:", error);
-        }
-
-        return socket;
+function submitGuess(event){
+    event.preventDefault();
+    const guess = document.getElementById('guessInput').value;
+    if(guess.toLowerCase() === currentWord.toLowerCase()){
+        console.log('guess is correct');
+        document.getElementById('message').textContent = 'Correct! Well done';
     }
+    else {
+        console.log('guess is incorrect');
+        document.getElementById('message').textContent = 'Wrong! Try again';
+    }
+    document.getElementById('guessInput').value='';
+}
 
-let socket = setUpWebSocket();
-
-    form.onsubmit = function(event) {
-        event.preventDefault();
-        if (socket.readyState === WebSocket.OPEN) {
-
-            socket.send(form.guess.value);
-            form.guess.value = '';
-        } else {
-            console.error("Socket not open. Message not sent");
-        }
-    };
-});
+startGame();
