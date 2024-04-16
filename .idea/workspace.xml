@@ -9,16 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Setting up word game functionality">
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Versioned files commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/guess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/guess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/puzzle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/serverSide.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -52,32 +58,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;GlassFish Server.GlassFish 7.0.11.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.guess.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.indexGame.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.wordPuzzle.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.game.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.puzzle.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/manal/Desktop/School/Year 2/Sem 2/Systems Dev and Integ/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "GlassFish Server.GlassFish 7.0.11.executor": "Run",
+    "JavaScript Debug.guess.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.indexGame.html.executor": "Run",
+    "JavaScript Debug.wordPuzzle.html.executor": "Run",
+    "Node.js.game.js.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "Node.js.puzzle.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/zfaus/OneDrive/Desktop/Courses/Y2_Winter/CSCI2020U/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JavaScript Debug.guess.html">
-    <configuration name="GlassFish 7.0.11" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.11">
+    <configuration name="GlassFish 7.0.11" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="WSChatServer:war exploded">
@@ -187,8 +195,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.guess.html" />
-        <item itemvalue="JavaScript Debug.indexGame.html" />
         <item itemvalue="JavaScript Debug.wordPuzzle.html" />
+        <item itemvalue="JavaScript Debug.indexGame.html" />
         <item itemvalue="Node.js.game.js" />
         <item itemvalue="Node.js.puzzle.js" />
       </list>
@@ -197,7 +205,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -213,7 +221,8 @@
       <workItem from="1713148735114" duration="9041000" />
       <workItem from="1713200928061" duration="1400000" />
       <workItem from="1713217655480" duration="1947000" />
-      <workItem from="1713237335535" duration="8077000" />
+      <workItem from="1713237335535" duration="4475000" />
+      <workItem from="1713279215192" duration="554000" />
     </task>
     <task id="LOCAL-00001" summary="Versioned files commit">
       <option name="closed" value="true" />
@@ -223,15 +232,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713159570693</updated>
     </task>
-    <task id="LOCAL-00002" summary="Setting up word game functionality">
-      <option name="closed" value="true" />
-      <created>1713242074922</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713242074922</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +240,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Versioned files commit" />
-    <MESSAGE value="Setting up word game functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up word game functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versioned files commit" />
   </component>
 </project>
