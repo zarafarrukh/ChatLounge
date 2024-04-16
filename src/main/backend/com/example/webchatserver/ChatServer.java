@@ -32,6 +32,9 @@ public class ChatServer
     // Map to store room IDs and corresponding room history
     private static Map<String, String> roomHistoryList = new HashMap<String, String>();
 
+    // Boolean variable to see if user has joined a chat room
+    private static Map<String, Boolean> userInChatRoom = new HashMap<>(String, Boolean);
+
     /******************************************************************** JOINING CHAT ROOM *****************************************************************************
 
     /**
@@ -72,6 +75,12 @@ public class ChatServer
         // update te chat room history
         String logHistory = roomHistoryList.getOrDefault(roomID, "");
         roomHistoryList.put(roomID, logHistory + "\\n " + username + " joined the chat room.");
+
+        // will set the user as in chat room
+        userInChatRoom.put(session.getId(), true);
+
+        // just checking problem with this DELETE LATER
+        System.out.println("User " + session.getId() + " joined the chat room. userInchatRoom set to true: " + userInChatRoom.get(session.getId()));
     }
 
     /**
@@ -123,6 +132,9 @@ public class ChatServer
                 saveChatRoomHistory(roomID, roomHistoryList.get(roomID));
             }
         }
+
+        // will set the user as not in chat room
+        userInChatRoom.put(session.getId(). false);
     }
 
     /************************************************************ HANDLING DIFFERENT TYPES OF MESSAGES ******************************************************************
@@ -135,6 +147,13 @@ public class ChatServer
     @OnMessage
     public void handleMessage(String comm, Session session) throws IOException
     {
+        // will check if the user is in a chat room before they can play the game
+        if (!userInChatRoom.getOrDefault(session.getId(), false))
+        {
+            System.out.println("Need to join a  chat room to play the game!");
+            return;
+        }
+
         String userID = session.getId();
         String roomID = roomList.get(userID);
 
