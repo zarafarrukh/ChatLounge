@@ -65,3 +65,22 @@ button {
 button:hover {
     background-color: #af93c2; /* Match button hover color */
 }
+
+/* emoji panel styling */
+#emojiPanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.emoji {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.emoji.selected {
+    transform: scale(1.2);
+}
