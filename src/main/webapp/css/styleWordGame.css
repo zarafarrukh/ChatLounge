@@ -1,0 +1,14 @@
+body {
+    background-color: #c5c9fa;
+}
+
+.box {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #a2d7d7; /* Sage green color */
+    border-radius: 8px;
+    text-align: center;
+}

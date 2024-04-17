@@ -233,6 +233,15 @@ document.getElementById('playTicTacToe').addEventListener('click', function() {
     }
 });
 
+// event listener for calling Play WordGame on  button click
+document.getElementById('playWordGame').addEventListener('click', function() {
+    if (inRoom) {
+        window.location.href = 'guess.html';
+    } else {
+        alert('Please join a room to play Word Game!');
+    }
+});
+
 //refresh chat function
 function refreshChat() {
     // Clear the chat log on the frontend
