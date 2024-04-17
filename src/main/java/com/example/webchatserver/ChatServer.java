@@ -134,7 +134,7 @@ public class ChatServer
         }
 
         // will set the user as not in chat room
-        userInChatRoom.put(session.getId(). false);
+        userInChatRoom.put(session.getId().false);
     }
 
     /************************************************************ HANDLING DIFFERENT TYPES OF MESSAGES ******************************************************************
