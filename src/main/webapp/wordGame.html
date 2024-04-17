@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleWordGame.css">
-    <title>Word Puzzle Game</title>
+    <title>Word Scramble Game</title>
 </head>
 <body>
 <div id="wrapper">
-    <h1>Welcome to Word Puzzle</h1>
+    <h1>Welcome to Word Scramble Game</h1>
     <div class = "box">
         <h2>Guess the word</h2>
-        <p id = "scrambledWord">Scrambled Word: <span id = "wordDisplay"></span></p>
-        <form>
-            <input type = "text"  id = "guessInput" placeholder = "Enter your guess" autofocus>
-            <button onclick="submitGuess()">Submit your guess</button>
+        <div id = "wordDisplay"></div>
+        <form id="guessForm">
+            <input type = "text"  id = "guessInput" placeholder = "Enter your guess here" autofocus>
+            <button type = "submit">Submit your guess</button>
         </form>
-        <p id = "message"></p>
+        <div id = "message"></div>
+        <button id = "restartGame" type="button">Play Again</button>
     </div>
 </div>
 

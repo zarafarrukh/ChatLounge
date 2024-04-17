@@ -2,7 +2,11 @@ body {
     background-color: #c5c9fa;
 }
 
-.box {
+.wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
     width: 100%;
     max-width: 400px;
     margin: auto;
@@ -12,3 +16,41 @@ body {
     border-radius: 8px;
     text-align: center;
 }
+
+.box {
+    background:white;
+    padding: 20px;
+    border-radius:8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+button {
+    background-color: #007Bff;
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition:background-color 0.3s;
+}
+
+button:hover {
+    background-color:#0056b3;
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+p {
+    font-size:1rem;
+    color:#666;
+}
+
+#reloadButton {
+    background-color: #f44336;
+    color:white;
+}
+
