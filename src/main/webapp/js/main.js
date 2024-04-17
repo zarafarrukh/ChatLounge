@@ -236,10 +236,58 @@ document.getElementById('playTicTacToe').addEventListener('click', function() {
 // event listener for calling Play WordGame on  button click
 document.getElementById('playWordGame').addEventListener('click', function() {
     if (inRoom) {
-        window.location.href = 'guess.html';
+        window.location.href = 'wordGame.html';
     } else {
         alert('Please join a room to play Word Game!');
     }
+});
+
+document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('click', function() {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            let reaction = {"type": "reaction", "emoji": emoji.textContent};
+            ws.send(JSON.stringify(reaction));
+        }
+    });
+});
+
+// getting reaction emoji and making it animate around the screen when clicked
+document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('click', function() {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            let reaction = {"type": "reaction", "emoji": emoji.textContent};
+            ws.send(JSON.stringify(reaction));
+        }
+
+        // Create a new emoji element
+        const emojiClone = emoji.cloneNode(true);
+        emojiClone.classList.add('floating-emoji');
+        document.body.appendChild(emojiClone);
+
+        // Randomize initial position
+        const randomX = Math.random() * (window.innerWidth - emojiClone.clientWidth);
+        const randomY = Math.random() * (window.innerHeight - emojiClone.clientHeight);
+        emojiClone.style.left = randomX + 'px';
+        emojiClone.style.top = randomY + 'px';
+
+        // Randomize animation duration
+        const duration = Math.random() * 3000 + 1000;
+
+        // Add animation to the emoji
+        emojiClone.animate([
+            { transform: 'translateY(0) rotate(0)' },
+            { transform: 'translateY(-100px) rotate(360deg)' }
+        ], {
+            duration: duration,
+            iterations: 1,
+            easing: 'ease-in-out'
+        });
+
+        // Remove the emoji element after animation completes
+        emojiClone.addEventListener('animationend', function() {
+            emojiClone.remove();
+        });
+    });
 });
 
 //refresh chat function
