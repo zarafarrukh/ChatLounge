@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Restructured directories: Server successfully deploying">
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="deleted redundant directory, fixed structure for game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/TicTacToe/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styleGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java\com\example" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.indexGame.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration name="GlassFish 7.0.11" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -219,8 +218,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.indexGame.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.indexGame.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.guess.html" />
@@ -259,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713159570693</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="deleted redundant directory, fixed structure for game">
+      <option name="closed" value="true" />
+      <created>1713384090795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713384090795</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +286,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Versioned files commit" />
     <MESSAGE value="Restructured directories: Server successfully deploying" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructured directories: Server successfully deploying" />
+    <MESSAGE value="deleted redundant directory, fixed structure for game" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted redundant directory, fixed structure for game" />
   </component>
 </project>
