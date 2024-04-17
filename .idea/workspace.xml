@@ -9,37 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Versioned files commit">
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Restructured directories: Server successfully deploying">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/TictacToe/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/TictacToe/ticTacToeGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/util/chatAPIHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/webchatserver/ChatRoom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/webchatserver/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/webchatserver/ChatServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/chatlounge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/coffee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/person1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/person2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/toTop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/confetti.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/indexGame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/guess.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/puzzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/confetti.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/confetti.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/indexGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +78,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/zfaus/OneDrive/Desktop/Courses/Y2_Winter/CSCI2020U/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp",
+    "last_opened_file_path": "C:/Users/zfaus/OneDrive/Desktop/Courses/Y2_Winter/CSCI2020U/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -271,6 +246,7 @@
       <workItem from="1713237335535" duration="4475000" />
       <workItem from="1713279215192" duration="554000" />
       <workItem from="1713378878916" duration="3230000" />
+      <workItem from="1713382983969" duration="191000" />
     </task>
     <task id="LOCAL-00001" summary="Versioned files commit">
       <option name="closed" value="true" />
@@ -286,8 +262,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Versioned files commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versioned files commit" />
+    <MESSAGE value="Restructured directories: Server successfully deploying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured directories: Server successfully deploying" />
   </component>
 </project>
