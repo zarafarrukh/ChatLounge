@@ -11,6 +11,35 @@
   <component name="ChangeListManager">
     <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Versioned files commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/TictacToe/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/TictacToe/ticTacToeGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/util/chatAPIHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/webchatserver/ChatRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/webchatserver/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/backend/com/example/webchatserver/ChatServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/chatlounge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/person1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/person2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/img/toTop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/confetti.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/indexGame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/guess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/puzzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/wordPuzzle/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +51,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Class" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -65,6 +95,7 @@
     "JavaScript Debug.guess.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.indexGame.html.executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
     "JavaScript Debug.wordPuzzle.html.executor": "Run",
     "Node.js.game.js.executor": "Run",
     "Node.js.main.js.executor": "Run",
@@ -72,17 +103,33 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/zfaus/OneDrive/Desktop/Courses/Y2_Winter/CSCI2020U/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal",
+    "last_opened_file_path": "C:/Users/zfaus/OneDrive/Desktop/Courses/Y2_Winter/CSCI2020U/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\webapp" />
+      <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main" />
+      <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal" />
+      <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java\com\example" />
+      <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java\com\example" />
+    </key>
+  </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.11">
     <configuration name="GlassFish 7.0.11" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -162,6 +209,12 @@
     <configuration name="indexGame.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/ticTacToe/indexGame.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="wordPuzzle.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/wordPuzzle/wordPuzzle.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -178,27 +231,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="game.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" working-dir="$PROJECT_DIR$/src/main/frontend/ticTacToe">
-      <method v="2" />
-    </configuration>
-    <configuration name="puzzle.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/main/frontend/wordPuzzle/puzzle.js" working-dir="$PROJECT_DIR$/src/main/frontend/wordPuzzle">
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="GlassFish Server.GlassFish 7.0.11" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="JavaScript Debug.wordPuzzle.html" />
       <item itemvalue="JavaScript Debug.guess.html" />
       <item itemvalue="JavaScript Debug.indexGame.html" />
-      <item itemvalue="Node.js.game.js" />
-      <item itemvalue="Node.js.puzzle.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.guess.html" />
         <item itemvalue="JavaScript Debug.wordPuzzle.html" />
         <item itemvalue="JavaScript Debug.indexGame.html" />
-        <item itemvalue="Node.js.game.js" />
-        <item itemvalue="Node.js.puzzle.js" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +270,7 @@
       <workItem from="1713217655480" duration="1947000" />
       <workItem from="1713237335535" duration="4475000" />
       <workItem from="1713279215192" duration="554000" />
+      <workItem from="1713378878916" duration="3230000" />
     </task>
     <task id="LOCAL-00001" summary="Versioned files commit">
       <option name="closed" value="true" />

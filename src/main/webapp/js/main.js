@@ -16,7 +16,7 @@ const typed = new Typed('.typed-text', {
 });
 
 // trigger animation for about section as it comes into view
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     var aboutSection = document.querySelector(".about");
 
     //Function to check if about is in viewport
@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
-
     //Function triggers animation for about section
     function triggerAnimation() {
         //if element is in viewport, proceed to animation
@@ -39,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
             window.removeEventListener("scroll", triggerAnimation);
         }
     }
-
     //show animation on scroll
     window.addEventListener("scroll", triggerAnimation);
 });
@@ -84,9 +82,9 @@ const roomHistories = new Map();
 
 // Function to update chat history for a room in the Map
 function updateChatHistory(roomCode, message) {
-    const currentHistory = roomHistories.get(roomCode) || "";
-    roomHistories.set(roomCode, currentHistory + message + "\n");
-}
+   const currentHistory = roomHistories.get(roomCode) || "";
+     roomHistories.set(roomCode, currentHistory + message + "\n");
+ }
 
 function fetchChatHistory(roomID) {
     return fetch("http://localhost:8080/ChatAPI-1.0-SNAPSHOT/api/history/" + roomID)
@@ -100,7 +98,6 @@ function fetchChatHistory(roomID) {
             return data.log; // Assuming the log is directly accessible from the JSON response
         });
 }
-
 let inRoom = false; // Variable to track if the user is in a room
 let notJoined = true; //keep track if user has messaged in the room
 
@@ -148,7 +145,7 @@ function enterRoom(code) {
         const receivedMsg = "[" + timestamp() + "] " + message.message;
         document.getElementById("log").value += "\n" + receivedMsg;
 
-        while (notJoined) {
+        while(notJoined) {
             // User has joined, append entrance message to the chat log and UI
             const entranceMsg = "[" + timestamp() + "] (Server " + code.trim() + "): " + ws.username + " joined the room.";
             document.getElementById("log").value += "\n" + entranceMsg;
@@ -195,11 +192,11 @@ function leaveRoom(code) {
 
     ws.onclose = function () {
 
-        if (ws.username) {
+        if(ws.username) {
             // Display a user left message to user
             const closeMsg = "[" + timestamp() + "] (Server " + code.trim() + "): " + ws.username + " has left the room.";
             document.getElementById("log").value += "\n" + closeMsg;
-        } else { // user left without setting a username, so display anonymous left
+        }else{ // user left without setting a username, so display anonymous left
             const anonCloseMsg = "[" + timestamp() + "] (Server " + code.trim() + "): An anonymous user has left the room.";
             document.getElementById("log").value += "\n" + anonCloseMsg;
         }
@@ -209,7 +206,7 @@ function leaveRoom(code) {
     if (ws && ws.readyState === WebSocket.OPEN) {
         // Send leaving message to the server
         console.log("Sending type to backend");
-        ws.send(JSON.stringify({"type": "leave", "userID": ws.userID}));
+        ws.send(JSON.stringify({"type": "leave" ,"userID": ws.userID}));
         // Close the WebSocket connection
         console.log("Closing socket");
         ws.close();
@@ -218,12 +215,12 @@ function leaveRoom(code) {
 }
 
 // event listener for calling leaveRoom() on leave button click
-document.getElementById("leaveRoomButton").addEventListener("click", function () {
+document.getElementById("leaveRoomButton").addEventListener("click", function() {
     leaveRoom(code);
 });
 
 // event listener for calling leaveRoom() on leave button click
-document.getElementById("enterButton").addEventListener("click", function () {
+document.getElementById("enterButton").addEventListener("click", function() {
     preExistingRoom();
 });
 
@@ -274,7 +271,7 @@ function preExistingRoom() {
 }
 
 // Add event listener so if user enters room code, go to preExistingRoom() function
-document.getElementById("room-code").addEventListener("keyup", function (event) {
+document.getElementById("room-code").addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         preExistingRoom();
     }
@@ -287,6 +284,3 @@ function timestamp() {
     var minutes = d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes();
     return hours + ':' + minutes;
 }
-
-
-

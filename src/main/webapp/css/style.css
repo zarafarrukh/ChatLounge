@@ -1164,10 +1164,10 @@ h3 {
 
 .team-photo {
 
-        width: 200px; /* Adjust based on desired width */
-        height: 200px; /* Adjust based on desired height */
-        object-fit: cover; /* This will ensure the image covers the area without distortion */
-        border-radius: 50%; /* Optional: Rounds the corners of the image */
-        margin-bottom: 10px; /* Space between image and text */
+    width: 200px; /* Adjust based on desired width */
+    height: 200px; /* Adjust based on desired height */
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+    border-radius: 50%; /* Optional: Rounds the corners of the image */
+    margin-bottom: 10px; /* Space between image and text */
 
 }

@@ -1,3 +1,5 @@
+package com.example.TicTacToe;
+
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -78,12 +80,13 @@ public class ticTacToeGame implements ActionListener
             return;
         }
 
+        /* THIS GIVES AN ERROR because the inChatRoom func needs to be implemented
         // will check if the user is in a chat room before they can play the game
         if (!inChatRoom)
         {
             System.out.println("Join a chat room to play the game!");
             return;
-        }
+        }*/
 
         // will increment player count when a player joins
         playerCount++;
