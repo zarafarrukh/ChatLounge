@@ -1,12 +1,15 @@
 package com.example.webchatserver;
 
-import java.io.*;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.apache.commons.lang3.RandomStringUtils;
+
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
-
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
-import org.apache.commons.lang3.RandomStringUtils;
 
 /**
  * This is a class that has services

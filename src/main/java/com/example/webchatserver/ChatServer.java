@@ -32,15 +32,12 @@ public class ChatServer
     // Map to store room IDs and corresponding room history
     private static Map<String, String> roomHistoryList = new HashMap<String, String>();
 
-    // Boolean variable to see if user has joined a chat room
-    private static Map<String, Boolean> userInChatRoom = new HashMap<>(String, Boolean);
-
     /******************************************************************** JOINING CHAT ROOM *****************************************************************************
 
-    /**
+     /**
      * This function initializes the connection, loads the chat history if available,
      * and handles the welcome process for new users joining the chat room
-    **/
+     **/
     @OnOpen
     public void open(@PathParam("roomID") String roomID, Session session) throws IOException
     {
@@ -75,17 +72,11 @@ public class ChatServer
         // update te chat room history
         String logHistory = roomHistoryList.getOrDefault(roomID, "");
         roomHistoryList.put(roomID, logHistory + "\\n " + username + " joined the chat room.");
-
-        // will set the user as in chat room
-        userInChatRoom.put(session.getId(), true);
-
-        // just checking problem with this DELETE LATER
-        System.out.println("User " + session.getId() + " joined the chat room. userInchatRoom set to true: " + userInChatRoom.get(session.getId()));
     }
 
     /**
      * Function to get the user from the session otherwise set as anonymous
-    **/
+     **/
     private String getUsernameFromSession(Session session)
     {
         String username = (String) session.getUserProperties().get("username");
@@ -94,7 +85,7 @@ public class ChatServer
 
     /*********************************************************************** LEAVING CHAT ROOM **************************************************************************
 
-    /**
+     /**
      * This function handles the cleanup process when a user leaves the chat room,
      * including updating the chat history and notifying other users about the user leaving,
      * if all the users leave the chat room, it saves the chat history before closing the connection
@@ -132,14 +123,11 @@ public class ChatServer
                 saveChatRoomHistory(roomID, roomHistoryList.get(roomID));
             }
         }
-
-//        // will set the user as not in chat room
-//        userInChatRoom.put(session.getId().false);
     }
 
     /************************************************************ HANDLING DIFFERENT TYPES OF MESSAGES ******************************************************************
 
-    /**
+     /**
      * This function manages different types of messages exchanged within the chat room,
      * handles user join and leave events, updates the chat history,
      * and broadcasts messages to users in the chat room
@@ -147,13 +135,6 @@ public class ChatServer
     @OnMessage
     public void handleMessage(String comm, Session session) throws IOException
     {
-        // will check if the user is in a chat room before they can play the game
-        if (!userInChatRoom.getOrDefault(session.getId(), false))
-        {
-            System.out.println("Need to join a  chat room to play the game!");
-            return;
-        }
-
         String userID = session.getId();
         String roomID = roomList.get(userID);
 
