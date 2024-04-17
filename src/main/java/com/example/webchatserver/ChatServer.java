@@ -133,8 +133,8 @@ public class ChatServer
             }
         }
 
-        // will set the user as not in chat room
-        userInChatRoom.put(session.getId().false);
+//        // will set the user as not in chat room
+//        userInChatRoom.put(session.getId().false);
     }
 
     /************************************************************ HANDLING DIFFERENT TYPES OF MESSAGES ******************************************************************
