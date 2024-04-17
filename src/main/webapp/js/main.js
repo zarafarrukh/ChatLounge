@@ -224,6 +224,15 @@ document.getElementById("enterButton").addEventListener("click", function() {
     preExistingRoom();
 });
 
+// event listener for calling Play TicTacToe on  button click
+document.getElementById('playTicTacToe').addEventListener('click', function() {
+    if (inRoom) {
+        window.location.href = 'indexGame.html';
+    } else {
+        alert('Please join a room to play Tic Tac Toe!');
+    }
+});
+
 //refresh chat function
 function refreshChat() {
     // Clear the chat log on the frontend
