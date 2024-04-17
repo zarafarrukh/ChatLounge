@@ -11,10 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Restructured directories: Server successfully deploying">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/confetti.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/confetti.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/indexGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/ticTacToe/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/ticTacToe/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/TicTacToe/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styleGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexGame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2f7MJg9lJ08kosPhLNT7d011ind" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,6 +69,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "GlassFish Server.GlassFish 7.0.11.executor": "Run",
     "JavaScript Debug.guess.html.executor": "Run",
+    "JavaScript Debug.index.html (1).executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.indexGame.html.executor": "Run",
     "JavaScript Debug.login.html.executor": "Run",
@@ -78,7 +80,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/zfaus/OneDrive/Desktop/Courses/Y2_Winter/CSCI2020U/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal",
     "list.type.of.created.stylesheet": "CSS",
@@ -102,10 +104,11 @@
       <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bisha\IdeaProjects\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\webapp\css" />
       <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java\com\example" />
     </key>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.11">
+  <component name="RunManager" selected="JavaScript Debug.indexGame.html">
     <configuration name="GlassFish 7.0.11" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -181,16 +184,16 @@
     <configuration name="guess.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/wordPuzzle/guess.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="indexGame.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/ticTacToe/indexGame.html" useBuiltInWebServerPort="true">
+    <configuration name="indexGame.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp/indexGame.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/login.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="wordPuzzle.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/wordPuzzle/wordPuzzle.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -208,19 +211,19 @@
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.GlassFish 7.0.11" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.login.html" />
-      <item itemvalue="JavaScript Debug.wordPuzzle.html" />
       <item itemvalue="JavaScript Debug.guess.html" />
       <item itemvalue="JavaScript Debug.indexGame.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.indexGame.html" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.guess.html" />
-        <item itemvalue="JavaScript Debug.wordPuzzle.html" />
-        <item itemvalue="JavaScript Debug.indexGame.html" />
       </list>
     </recent_temporary>
   </component>
