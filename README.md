@@ -39,7 +39,7 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
    <img src="chatLounge.png" alt="ChatLounge" width="700">
 </p>
 <p align="center">
-   <img src="reaction.png" alt="floating reactions" width="700">
+   <img src="reactions.png" alt="floating reactions" width="700">
 </p>
 
 ## Key Features
