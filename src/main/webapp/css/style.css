@@ -80,7 +80,7 @@ textarea {
 
 :root {
     --bg-color: #c5c9fa;
-    --second-bg-color: #dffafa;
+    --second-bg-color: #d1ffff;
     --text-color: #000000	;
     --main-color: #a68be0;
 }
@@ -565,7 +565,6 @@ styledh3Content {
 
 #RefreshChat:hover {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
-    transform: scale(1.02);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -660,7 +659,7 @@ a {
 .flex-box {
     display:flex;
 }
-/*Play word game button */
+/*Play tic tac toe game button*/
 #playWordGame {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
     border: 2px solid var(--main-color);
@@ -675,6 +674,16 @@ a {
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#playWordGame:hover {
+    background: linear-gradient(to bottom, #554bdc 0%, #7b4bdc 100%);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#playWordGame:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
 }
 
 /*Play tic tac toe game button*/
@@ -695,7 +704,7 @@ a {
 }
 
 #playTicTacToe:hover {
-    background: linear-gradient(to bottom, #dc4b4b 0%, #dc4b4b 100%);
+    background: linear-gradient(to bottom, #554bdc 0%, #7b4bdc 100%);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
