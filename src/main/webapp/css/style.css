@@ -646,7 +646,7 @@ a {
 
 /*Play Word game button*/
 /* Existing styles for the "play word game" button */
-#playWordGame {
+#playWordGame, #playTicTacToe, #playSnakeGame {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
     border: 2px solid var(--main-color);
     color: white;
@@ -681,27 +681,6 @@ a {
     box-shadow: none;
 }
 
-/*Play tic tac toe game button*/
-#playTicTacToe {
-    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
-    border: 2px solid var(--main-color);
-    color: white;
-    padding: 10px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 15px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#playTicTacToe:hover {
-    background: linear-gradient(to bottom, #554bdc 0%, #7b4bdc 100%);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-}
 /* Additional styles for the button hover effect */
 #playTicTacToe:hover {
     background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
@@ -755,6 +734,26 @@ a {
     }
 }
 #playHangman:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
+}
+
+
+/* Additional styles for the button hover effect */
+#playSnakeGame:hover {
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
+    animation: slidebg 1.5s linear infinite;
+    color:#000;
+}
+
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+#playSnakeGame:active {
     transform: scale(0.95); /* Shrink the button slightly */
     box-shadow: none;
 }
