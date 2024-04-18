@@ -215,138 +215,6 @@ ul li a:hover:before{
     transform:scaleX(1);
 }
 
-/*==== Username prompt modal ===== */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto; /* Allow vertical scrolling */
-    background-color: rgba(0, 0, 0, 0.3);
-    animation: fadeInUpModal 0.9s ease forwards; /* fade-in-up animation */
-    transform: translateY(50%); /* Start with modal positioned below the viewport */
-    border-radius: 20px;
-}
-
-/* Keyframes for fade-in animation */
-@keyframes fadeInUpModal {
-    from {
-        opacity: 0.5; /* Start with opacity 0 */
-        transform: translateY(50%); /* Start with modal positioned below the viewport */
-    }
-    to {
-        opacity: 1; /* End with opacity 1 */
-        transform: translateY(0); /* End with modal positioned at its original position */
-    }
-}
-.error-message {
-    font-family: 'Poppins', sans-serif;
-    color: red;
-}
-.modal-content {
-    background-color:  rgba(255, 255, 255, 0.9);
-    margin: 12% auto;
-    padding: 30px;
-    border: 1px solid #888;
-    /* Set maximum sizes to prevent it from becoming too wide on larger screens */
-    max-width: 800px;
-    max-height: 600px;
-    width: 40%;
-    height:56%;
-    overflow-y: auto; /* Allow vertical scrolling */
-    border-radius: 20px;
-    box-shadow: -3px 5px 10px rgba(166, 139, 224, 0.3), /* Shadow from top-left */
-    3px 5px 10px rgba(166, 139, 224, 0.3), /* Shadow from top-right */
-    -3px -5px 10px rgba(166, 139, 224, 0.3), /* Shadow from bottom-left */
-    3px -5px 10px rgba(166, 139, 224, 0.3); /* Shadow from bottom-right */
-}
-
-.close {
-    color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* text styles for modal*/
-.modal-content h2 {
-    font-size: 24px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.modal-content h4 {
-    font-size: 18px;
-    color: #090000;
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Modal submit*/
-.input-container {
-    text-align: center; /* Center children horizontally */
-}
-
-.modal-content #usernameInput {
-    width: 50%;
-    padding: 8px 15px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
-    font-size: 16px;
-    display: inline-block;
-    text-align: center;
-    transition: border-color 0.3s;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* username input field on focus */
-#usernameInput:focus {
-    outline: none;
-    border-color: #4CAF50;
-}
-
-.modal-content #usernameSubmit {
-    background-color: var(--main-color);
-    border: none;
-    color: white;
-    padding: 9px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    border-radius: 5px;
-    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5), -3px 0 2px var(--main-color);
-    font-family: 'Poppins', sans-serif;
-}
-
-#usernameSubmit:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
-#usernameSubmit:active {
-    transform: scale(0.95); /* Shrink button when clicked */
-    box-shadow: none; /* Remove the shadow when clicked */
-}
-
 /*Top section of homepage*/
 
 .home {
@@ -763,25 +631,49 @@ a {
 }
 
 /*Chat box*/
+/* CSS to center the chat box */
+.section-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Adjust the width of the chat box if needed */
+.section-chat .wrapper {
+    width: 100%;
+}
+
+/* Adjust the width of the textarea if needed */
+.section-chat .chat-log {
+    width: 100%;
+}
+
+/* Adjust the width of the input field if needed */
+.section-chat .chat-input input {
+    width: 100%;
+}
 
 .chat-log {
     display: block;
-    width: 80%;
+    max-width: 100%;
+    width: 100%;
     height: 250px;
     resize: none;
-    margin: 0;
+    margin-left: auto;
     padding: 0;
     border: 0;
-    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
+    /*box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);*/
     font-size: 18px; /*chatlog font size*/
     line-height: 1.3;
 }
 
 .wrapper{
-    width: 80%;
+    width: 60%;
     background: #e3ebff;
     padding: 10px;
-    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
+    /*box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);*/
+    margin-left: auto;
 }
 .wrapper .input-data{
     height: 40px;
@@ -831,10 +723,11 @@ a {
 }
 
 .wrapper2{
-    width: 80%;
+    width: 100%;
     background: #E3EBFFFF;
     padding: 30px;
-    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
+    /*box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);*/
+    margin-left: auto;
 }
 .wrapper2 .chat-input{
     height: 40px;
@@ -884,19 +777,27 @@ a {
 }
 
 /* CSS for the games column */
-.games {
+.container {
+    display: flex; /* Use flexbox to align items */
+}
+
+.chat-box {
+    flex: 1; /* Allow the chat box to take up remaining space */
+}
+
+.games-right {
     opacity: 0;
     width: 20%;
-    float: right;
     padding: 20px;
-    background-color: #c7baee; /* Background color for the games column */
+    background-color: #c7baee;
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
-    box-shadow: 4px 0 10px rgba(140, 0, 255, 0.7); /* Drop shadow */
+    box-shadow: 4px 0 10px rgba(140, 0, 255, 0.7);
+    margin: auto;
 }
 
 /* Additional Fancy Animation */
-.games.animation-active {
+.games-right.animation-active {
     opacity: 1;
     animation: slideInFromLeft 0.5s ease forwards;
 }
@@ -912,35 +813,52 @@ a {
     }
 }
 
-
 /* Styling for the games list */
-.games h2 {
+.games-right h2 {
     font-size: 24px;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    margin-right:25px;
 }
 
-.games ul {
-    list-style-type: none;
-    padding: 0;
+.games-left {
+    opacity: 0;
+    width: 20%;
+    padding: 20px;
+    background-color: #c7baee; /* Background color for the games-left column */
+    border-top-left-radius: 90px; /* Adjusted to border-top-left-radius */
+    border-bottom-left-radius: 90px; /* Adjusted to border-bottom-left-radius */
+    box-shadow: -4px 0 10px rgba(140, 0, 255, 0.7); /* Adjusted box shadow */
+    margin:auto;
+    float:left;
 }
 
-.games li {
+/* Additional Fancy Animation */
+.games-left.animation-active {
+    opacity: 1;
+    animation: slideInFromRight 0.5s ease forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Styling for the left games list */
+.games-left h2 {
+    font-size: 24px;
     margin-bottom: 15px;
-}
-
-.games a {
-    text-decoration: none;
-    color: #fff; /* Slightly lighter text color */
     font-family: 'Poppins', sans-serif;
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #fff;
+    margin-left:45px;
 }
-
-.games a:hover {
-    color: #000; /* Darker text color on hover */
-}
-
 
 /*EMOJI BUTTON*/
 #emoji-button {

@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var gamesColumn = document.querySelector(".games");
+    var gamesColumn = document.querySelector(".games-right");
     var animationTriggered = false; // Flag to track whether animation has been triggered
 
     // Function to check if games column is in viewport
@@ -75,6 +75,41 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show animation on scroll
     window.addEventListener("scroll", triggerAnimation);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var gamesColumn = document.querySelector(".games-left"); // Updated selector
+    var animationTriggered = false; // Flag to track whether animation has been triggered
+
+    // Function to check if games column is in viewport
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.left >= 0 &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+
+    // Function to trigger animation for games column
+    function triggerAnimation() {
+        // If animation already triggered or element not in viewport, do nothing
+        if (animationTriggered || !isElementInViewport(gamesColumn)) {
+            return;
+        }
+
+        // Trigger animation
+        gamesColumn.classList.add("animation-active"); // Updated class to add
+        // Set flag to true to indicate animation has been triggered
+        animationTriggered = true;
+        // Remove the event listener after the animation is triggered to prevent unnecessary processing
+        window.removeEventListener("scroll", triggerAnimation);
+    }
+
+    // Show animation on scroll
+    window.addEventListener("scroll", triggerAnimation);
+});
+
 
 /* ChatRooms */
 let code = ""; // Variable to store the current room code

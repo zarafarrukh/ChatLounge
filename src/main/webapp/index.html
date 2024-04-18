@@ -65,90 +65,111 @@
   </div>
 </section>
 
-<!-- Main Project section -->
-<section class="project" id="project">
+<section class="project section-chat" id="project">
   <h2 class="title">Create or Join a <span>ChatRoom</span> and play!</h2>
-  <!-- Chat Rooms List -->
-  <h3>Chat Rooms List</h3>
-  <table id="room-list">
-    <tbody>
-    <!-- Each row represents a chat room code-->
-    <tr data-room="room"></tr>
-    </tbody>
-  </table>
+  <div class="container">
+    <!-- Left Games column -->
+    <section class="games-left">
+      <!-- Games content goes here -->
+      <h2>Games</h2>
+      <!-- Button to link to the Tic Tac Toe game -->
+      <button id="playTicTacToe">Play Tic Tac Toe</button>
 
-  <!-- Chat box section -->
-  <!-- Games column -->
-  <section class="games">
-    <!-- Games content goes here -->
-    <!-- For example: -->
-    <h2>Games</h2>
-    <!-- Button to link to the Tic Tac Toe game -->
-    <button id="playTicTacToe">Play Tic Tac Toe</button>
+      <!-- Button to link to the Connect 4 game -->
+      <button id="playConnect4Game">Play Connect 4</button>
 
-    <!-- Button to link to the Connect 4 game -->
-    <button id="playConnect4Game">Play Connect 4</button>
+      <!-- Button to link to the Snake game -->
+      <button id="playSnakeGame">Play Snake Game</button>
 
-    <!-- Button to link to the Snake game -->
-    <button id="playSnakeGame">Play Snake Game</button>
+      <!-- Button to link to the Hangman Game -->
+      <button id="playHangman">Play Hangman</button>
 
-    <!-- Button to link to the Hangman Game -->
-    <button id="playHangman">Play Hangman</button>
+      <!-- Button to link to the Word game -->
+      <button id="playWordGame">Play Word Game</button>
+    </section>
+    <!-- Chat box section -->
+    <div class="chat-box">
+      <!-- Chat Rooms List -->
+      <h3>Chat Rooms List</h3>
+      <table id="room-list">
+        <tbody>
+        <!-- Each row represents a chat room code-->
+        <tr data-room="room"></tr>
+        </tbody>
+      </table><br><br>
 
-    <!-- Button to link to the Word game -->
-    <button id="playWordGame">Play Word Game</button>
-  </section>
-  <div class="wrapper">
-    <div class = "flex-box">
-      <!-- Button to create a new room-->
-      <button id="createButton" onclick="newRoom()">Create & Join Room</button>
+      <!-- Chat box content goes here -->
+      <div class="wrapper">
+        <!-- Wrapper content -->
+        <div class = "flex-box">
+          <!-- Button to create a new room-->
+          <button id="createButton" onclick="newRoom()">Create & Join Room</button>
 
-      <!-- Button to leave the current room -->
-      <button id="leaveRoomButton" onclick="leaveRoom()">Leave Room</button>
+          <!-- Button to leave the current room -->
+          <button id="leaveRoomButton" onclick="leaveRoom()">Leave Room</button>
 
-      <!--Button to refresh chats-->
-      <button id="RefreshChat" onclick="refreshChat()">Refresh Chat</button>
-    </div>
+          <!--Button to refresh chats-->
+          <button id="RefreshChat" onclick="refreshChat()">Refresh Chat</button>
+        </div>
 
-    <!--Room code input section for entering pre existing rooms-->
-    <div class="input-data">
-      <input type="text" id="room-code" required>
-      <label for="room-code">Or join with a room code</label>
-      <div class="underline"></div>
-    </div>
-    <br>
-
-    <!--button to enter already existing room-->
-    <button id="enterButton">
-      <!-- Button inspiration: https://dribbble.com/shots/4397812-Click-Me -->
-
-      <a class="cta">
-        <span>ENTER</span>
-        <svg width="13px" height="10px" viewBox="0 0 13 10">
-          <path d="M1,5 L11,5"></path>
-          <polyline points="8 1 12 5 8 9"></polyline>
-        </svg>
-      </a></button>
-  </div>
-
-  <textarea title="Chat Log" id="log" readonly class="chat-log"></textarea>
-
-  <!--Bottom section of chat box with message input field-->
-  <div class="wrapper2">
-    <div class="chat-input">
-      <input type="text" id="input" required>
-      <label for="input">Type...</label>
-      <div class="underline"></div>
-    </div>
-    <div class="emoji-picker">
-      <button id="emoji-button">😀</button>
-      <div class="emoji-list">
-        <!-- Emojis will be populated here -->
+        <!--Room code input section for entering pre-existing rooms-->
+        <div class="input-data">
+          <input type="text" id="room-code" required>
+          <label for="room-code">Or join with a room code</label>
+          <div class="underline"></div>
+        </div>
+        <br>
+        <!--button to enter an already existing room-->
+        <button id="enterButton">
+          <!-- Button inspiration: https://dribbble.com/shots/4397812-Click-Me -->
+          <a class="cta">
+            <span>ENTER</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </button>
+      </div>
+      <textarea title="Chat Log" id="log" readonly class="chat-log"></textarea>
+      <!--Bottom section of chat box with message input field-->
+      <div class="wrapper2">
+        <div class="chat-input">
+          <input type="text" id="input" required>
+          <label for="input">Type...</label>
+          <div class="underline"></div>
+        </div>
+        <div class="emoji-picker">
+          <button id="emoji-button">😀</button>
+          <div class="emoji-list">
+            <!-- Emojis will be populated here -->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
+    <!-- Right Games column -->
+    <section class="games-right">
+      <!-- Games content goes here -->
+      <h2>Games</h2>
+      <!-- Button to link to the Tic Tac Toe game -->
+      <button id="playTicTacToe">Play Tic Tac Toe</button>
+
+      <!-- Button to link to the Connect 4 game -->
+      <button id="playConnect4Game">Play Connect 4</button>
+
+      <!-- Button to link to the Snake game -->
+      <button id="playSnakeGame">Play Snake Game</button>
+
+      <!-- Button to link to the Hangman Game -->
+      <button id="playHangman">Play Hangman</button>
+
+      <!-- Button to link to the Word game -->
+      <button id="playWordGame">Play Word Game</button>
+    </section>
+  </div>
 </section>
+
 
 
 <!-- footer design -->
