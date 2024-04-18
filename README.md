@@ -38,6 +38,9 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 <p align="center">
    <img src="chatLounge.png" alt="ChatLounge" width="700">
 </p>
+<p align="center">
+   <img src="reaction.png" alt="floating reactions" width="700">
+</p>
 
 ## Key Features
 - Seamless chat refreshing functionality to ensure the latest conversations are readily available.
