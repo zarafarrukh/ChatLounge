@@ -10,7 +10,7 @@ Each chat room has a unique code for separate discussions. The server handles us
 
 # Games: 
 
-## Tic Tac Toe Game ❌⭕
+## Tic Tac Toe ❌⭕
 - Players can choose emojis as their game pieces.
 - Use reaction emojis during gameplay for interactive communication, members of the room can send reaction emojis visible to all members inside the game
 - Celebratory animations play upon winning a game and are reset for each game
@@ -23,7 +23,7 @@ Each chat room has a unique code for separate discussions. The server handles us
 ## Snake Game 🐍
 - Navigate a snake around the game board to eat food and grow longer.
 - Avoid collisions with walls and the snake's own body to survive and achieve a high score.
-- Customize game by changing color of the snake and its food 
+- Customize game by changing speed and color of the snake and its food
 
 ## Hangman 🪢
 - Players guess the words.
@@ -31,11 +31,10 @@ Each chat room has a unique code for separate discussions. The server handles us
 - Word is revelaed after limited tries.
   
 ## Connect 4 🔴🟡
-- Players take turns dropping colored discs into a vertical grid.
+- Personalized gaming experience for players selecting emoji avatars to represent them during gameplay.
+- Players take turns dropping emoji discs into a grid.
 - The goal is to connect four of one's own discs vertically, horizontally, or diagonally before the opponent does.
 
-
-ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 <p align="center">
    <img src="chatLounge.png" alt="ChatLounge" width="700">
 </p>
