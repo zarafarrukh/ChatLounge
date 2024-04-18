@@ -53,6 +53,10 @@ Each chat room has a unique code for separate discussions. The server handles us
 - The implementation of "Play Again" functionalities empowers users to extend their gaming experiences, fostering prolonged enjoyment and maximizing user retention.
 - In Tic Tac Toe, users can select emojis as avatars from a comprehensive emoji selection interface, enriching their gaming experience with an interactive and enjoyable element, thus enhancing overall engagement.
 
+## Future Modifications
+- Implement a scoreboard feature for each game to track and display player scores, enhancing competitiveness and user engagement.
+- Position the chat server and games adjacent to each other within the same window to facilitate seamless user interaction and eliminate the need for opening additional windows.
+- Enhance the games with sophisticated animations to increase their entertainment value and visual appeal.
   
 ## How to Run
 
