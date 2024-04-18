@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="css/styleSnakeGame.css">
 </head>
 <body>
-<div class="game-container">
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <div id="score">Score: 0</div>
+<div class="container">
+    <div class="color-pickers">
+        <div class="snake-color-container">
+            <label for="snakeColor">Pick the color of your snake</label>
+            <input type="color" id="snakeColor" value="#2ecc71">
+        </div>
+
+        <div class="food-color-container">
+            <label for="foodColor">Pick a food color</label>
+            <input type="color" id="foodColor" value="#e74c3c">
+        </div>
+        <div class="speed-container">
+            <label for="speedInput">Set player speed:</label>
+            <br>
+            <input type="number" id="speedInput" min="1" max="100" value="10">
+            <button id="applySpeedBtn">Apply Speed</button>
+        </div>
+
+    </div>
+    <div class="game-container">
+        <h1>Welcome to the Snake Game! <img src="img/snake.png" alt="Snake Icon" class="snake-image"></h1>
+        <h3>Start by pressing a key. Goal: 100</h3>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="score">Score: 0</div>
+    </div>
+    <div id="congratulations" style="display: none;">
+        <h3>Congratulations! You reached a score of 100!</h3>
+    </div>
 </div>
 <script src="js/snake.js"></script>
 </body>

@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('gameCanvas');
     const ctx = canvas.getContext('2d');
     const scoreDisplay = document.getElementById('score');
+    const foodColorInput = document.getElementById('foodColor'); // Declare foodColorInput
+    const snakeColorInput = document.getElementById('snakeColor'); // Declare snakeColorInput
+    const speedInput = document.getElementById('speedInput');
+    const applySpeedBtn = document.getElementById('applySpeedBtn');
+
+    applySpeedBtn.addEventListener('click', () => {
+        playerSpeed = parseInt(speedInput.value);
+        clearInterval(gameInterval); // Stop the current game loop
+        gameInterval = setInterval(gameLoop, 1000 / playerSpeed); // Start a new game loop with the updated speed
+    });
 
     const GRID_SIZE = 20;
     const CANVAS_SIZE = canvas.width;
@@ -11,8 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let dx = 0;
     let dy = 0;
     let score = 0;
+    let foodColor = '#e74c3c'; // Default food color
+    let snakeColor ='#2ecc71' //Default snake color
+    let playerSpeed = 10; // Default player speed
 
-    setInterval(gameLoop, 100);
+    let gameInterval = setInterval(gameLoop, 125);
 
     document.addEventListener('keydown', changeDirection);
 
@@ -24,20 +37,37 @@ document.addEventListener('DOMContentLoaded', () => {
         checkCollision();
         checkFoodCollision();
         scoreDisplay.textContent = `Score: ${score}`;
+
+        if (score === 100) {
+            clearInterval(gameInterval); // Stop the game loop
+            congratulatePlayer();
+        }
+    }
+    function congratulatePlayer() {
+        document.getElementById('congratulations').style.display = 'block';
     }
 
     function drawSnake() {
         snake.forEach(segment => {
-            ctx.fillStyle = '#2ecc71';
+            ctx.fillStyle = snakeColor; // Use snakeColor variable
             ctx.fillRect(segment.x * GRID_SIZE, segment.y * GRID_SIZE, GRID_SIZE, GRID_SIZE);
         });
     }
 
+    snakeColorInput.addEventListener('change', () => {
+        snakeColor = snakeColorInput.value;
+    });
+
     function drawFood() {
-        ctx.fillStyle = '#e74c3c';
+        ctx.fillStyle = foodColor;
         ctx.fillRect(food.x * GRID_SIZE, food.y * GRID_SIZE, GRID_SIZE, GRID_SIZE);
     }
 
+    foodColorInput.addEventListener('change', () => {
+        foodColor = foodColorInput.value;
+    });
+
+    // moveSnake function to use the player speed
     function moveSnake() {
         const head = { x: snake[0].x + dx, y: snake[0].y + dy };
         snake.unshift(head);
