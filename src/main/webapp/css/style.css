@@ -859,14 +859,33 @@ a {
 
 /* CSS for the games column */
 .games {
+    opacity: 0;
     width: 20%; /* Adjust the width as needed */
     float: right;
     padding: 20px;
     background-color: #c7baee; /* Background color for the games column */
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
-    box-shadow: 4px 0px 10px rgba(209, 255, 255, 0.7); /* Drop shadow */
+    box-shadow: 4px 0 10px rgba(140, 0, 255, 0.7); /* Drop shadow */
 }
+
+/* Additional Fancy Animation */
+.games.animation-active {
+    opacity: 1;
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 /* Styling for the games list */
 .games h2 {
