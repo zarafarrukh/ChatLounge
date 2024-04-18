@@ -10,26 +10,26 @@ Each chat room has a unique code for separate discussions. The server handles us
 
 # Games: 
 
-## Tic Tac Toe Game
+## Tic Tac Toe Game ❌⭕
 - Players can choose emojis as their game pieces.
 - Use reaction emojis during gameplay for interactive communication, members of the room can send reaction emojis visible to all members inside the game
 - Celebratory animations play upon winning a game and are reset for each game
 
-## Word Game
+## Word Game 🔠
 - Players decipher scrambled words.
 - Submit guesses to win rounds.
 - Enjoy continuous engagement with multiple rounds.
 
-## Snake Game
+## Snake Game 🐍
 - Navigate a snake around the game board to eat food and grow longer.
 - Avoid collisions with walls and the snake's own body to survive and achieve a high score
 
-## Hangman
+## Hangman 🪢
 - Players guess the words.
 - Submit letters to win rounds.
 - Word is revelaed after limited tries.
   
-## Connect 4
+## Connect 4 🔴🟡
 - Players take turns dropping colored discs into a vertical grid.
 - The goal is to connect four of one's own discs vertically, horizontally, or diagonally before the opponent does.
 
@@ -37,6 +37,9 @@ Each chat room has a unique code for separate discussions. The server handles us
 ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 <p align="center">
    <img src="chatLounge.png" alt="ChatLounge" width="700">
+</p>
+<p align="center">
+   <img src="reactions.png" alt="floating reactions" width="700">
 </p>
 
 ## Key Features
@@ -60,7 +63,13 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
     - Set default URL as `http://localhost:8080/WSChatServer-1.0-SNAPSHOT/`
 4. Start GlassFish server and deploy application on selecting ▶
 
-### This endeavor is the result of a collaborative effort harnessing the collective expertise of Zara Farrukh, Rabia Chattha, Syeda Bisha Fatima, and Manal Afzal.
+
+## Developers:
+### This endeavor is the result of a collaborative effort harnessing the collective expertise of:
+- Zara Farrukh.
+- Syeda Bisha Fatima.
+- Rabia Chatta.
+- Manal Afzal.
 
 ## Other Resources
 [1] CSCI2020U - Assignment 2: ChatLounge
