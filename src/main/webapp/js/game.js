@@ -195,8 +195,32 @@ reactions.forEach(reaction => {
 
 // Function to append reaction to the chat log
 function appendToChatLog(reaction) {
-    const reactionElement = document.createElement('div');
-    reactionElement.textContent = `Reaction: ${reaction}`;
-    chatLog.appendChild(reactionElement);
-}
+    const numEmojis = 20;
+    const sizeEmoji = 30;
+    const fallDistance = window.innerHeight + sizeEmoji;
+    const animationDuration = 4;
 
+    for (let i = 0; i < numEmojis; i++) {
+        const reactionElement = document.createElement('div');
+        reactionElement.textContent = reaction;
+        reactionElement.classList.add('falling-emoji'); // Class : falling-emoji
+        reactionElement.style.left = `${Math.random() * (window.innerWidth - sizeEmoji)}px`; // Randomizing start position
+        reactionElement.style.top = `-${sizeEmoji}px`; // setting the fall to start from top
+        document.body.appendChild(reactionElement);
+
+        // falling motion animation
+        const keyframes = [
+            { transform: 'translateY(0px)' }, // Starting position
+            { transform: `translateY(${fallDistance}px)` } // Ending position
+        ];
+        const timing = {
+            duration: (animationDuration + Math.random() * 1) * 1000, // Randomize duration a bit
+            easing: 'linear',
+            fill: 'forwards'
+        };
+
+        reactionElement.animate(keyframes, timing).onfinish = () => {
+            document.body.removeChild(reactionElement);
+        };
+    }
+}

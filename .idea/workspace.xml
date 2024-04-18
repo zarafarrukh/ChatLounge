@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="added avatars and updated game code to accomodate it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styleGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styleGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
