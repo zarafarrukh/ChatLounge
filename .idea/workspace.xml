@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="added developers choices">
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="added avatars and updated game code to accomodate it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexGame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,9 +249,7 @@
       <workItem from="1713279215192" duration="554000" />
       <workItem from="1713378878916" duration="3230000" />
       <workItem from="1713382983969" duration="191000" />
-      <workItem from="1713389032689" duration="1416000" />
-      <workItem from="1713391670561" duration="241000" />
-      <workItem from="1713391991530" duration="233000" />
+      <workItem from="1713389032689" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="Versioned files commit">
       <option name="closed" value="true" />
@@ -292,15 +291,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713388601460</updated>
     </task>
-    <task id="LOCAL-00006" summary="added developers choices">
-      <option name="closed" value="true" />
-      <created>1713389989982</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713389989982</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +315,6 @@
     <MESSAGE value="playgame button fixed on main page" />
     <MESSAGE value="added conditional for game-&gt; must join a room first" />
     <MESSAGE value="added avatars and updated game code to accomodate it" />
-    <MESSAGE value="added developers choices" />
-    <option name="LAST_COMMIT_MESSAGE" value="added developers choices" />
+    <option name="LAST_COMMIT_MESSAGE" value="added avatars and updated game code to accomodate it" />
   </component>
 </project>

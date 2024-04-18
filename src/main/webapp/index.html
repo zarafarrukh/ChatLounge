@@ -42,8 +42,9 @@
 <!-- home section design -->
 <section class="home" id="home">
   <div class="home-content">
-    <h3>Web Chat Server</h3>
-    <styledh3Title>ChatLounge <img src="img/coffee.png" alt="Coffee Icon" class="coffeeicon"></styledh3Title>
+    <h3>Welcome to</h3>
+    <styledh3Title>ChatLounge <img src="img/gaming.png" alt="Game Icon" class="gameicon"></styledh3Title>
+    <h4>Where gaming meets great conversation!</h4>
     <h3>Crafted By <span class="typed-text"></span></h3>
   </div>
 
@@ -57,17 +58,16 @@
 <section class="about" id="about">
   <div class="about-content">
     <h2 class="title">Welcome to <styledh3Content>ChatLounge!</styledh3Content></h2>
-    <p>Creating a web chat server with numerous rooms involves constructing a real-time communication system
-      where users can engage in private discussions with their friends or fellow members. Each chat room within the server
-      will have its own group of participants, facilitating discussions effectively. Employing backend technology is imperative
-      for managing communication among users and chat rooms. Utilizing WebSockets enables seamless real-time messaging. In essence,
-      the project fosters secure and user-friendly private communication among users within a platform.</p>
+    <p>Developing a web chat server with multiple rooms enables real-time communication among users. Each room hosts discussions among its participants.
+      Backend technology, including WebSockets, ensures seamless messaging. This project promotes
+      secure and user-friendly private communication within a platform, allowing users to engage in
+      GAMES while in a room!</p>
   </div>
 </section>
 
 <!-- Main Project section -->
 <section class="project" id="project">
-  <h2 class="title">Create or Join a <span>ChatRoom</span></h2>
+  <h2 class="title">Create or Join a <span>ChatRoom</span> and play!</h2>
   <!-- Chat Rooms List -->
   <h3>Chat Rooms List</h3>
   <table id="room-list">
@@ -78,18 +78,37 @@
   </table>
 
   <!-- Chat box section -->
-  <div class="wrapper">
-    <!-- Button to create a new room-->
-    <button id="createButton" onclick="newRoom()">Create & Join Room</button>
-
-    <!-- Button to leave the current room -->
-    <button id="leaveRoomButton" onclick="leaveRoom()">Leave Room</button>
-
-    <!--Button to refresh chats-->
-    <button id="RefreshChat" onclick="refreshChat()">Refresh Chat</button>
-
+  <!-- Games column -->
+  <section class="games">
+    <!-- Games content goes here -->
+    <!-- For example: -->
+    <h2>Games</h2>
     <!-- Button to link to the Tic Tac Toe game -->
     <button id="playTicTacToe">Play Tic Tac Toe</button>
+
+    <!-- Button to link to the Connect 4 game -->
+    <button id="playConnect4Game">Play Connect 4</button>
+
+    <!-- Button to link to the Snake game -->
+    <button id="playSnakeGame">Play Snake Game</button>
+
+    <!-- Button to link to the Hangman Game -->
+    <button id="playHangman">Play Hangman</button>
+
+    <!-- Button to link to the Word game -->
+    <button id="playWordGame">Play Word Game</button>
+  </section>
+  <div class="wrapper">
+    <div class = "flex-box">
+      <!-- Button to create a new room-->
+      <button id="createButton" onclick="newRoom()">Create & Join Room</button>
+
+      <!-- Button to leave the current room -->
+      <button id="leaveRoomButton" onclick="leaveRoom()">Leave Room</button>
+
+      <!--Button to refresh chats-->
+      <button id="RefreshChat" onclick="refreshChat()">Refresh Chat</button>
+    </div>
 
     <!--Room code input section for entering pre existing rooms-->
     <div class="input-data">
@@ -100,7 +119,8 @@
     <br>
 
     <!--button to enter already existing room-->
-    <button id="enterButton"><!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
+    <button id="enterButton">
+      <!-- Button inspiration: https://dribbble.com/shots/4397812-Click-Me -->
 
       <a class="cta">
         <span>ENTER</span>
@@ -110,6 +130,7 @@
         </svg>
       </a></button>
   </div>
+
   <textarea title="Chat Log" id="log" readonly class="chat-log"></textarea>
 
   <!--Bottom section of chat box with message input field-->
@@ -119,6 +140,12 @@
       <label for="input">Type...</label>
       <div class="underline"></div>
     </div>
+    <div class="emoji-picker">
+      <button id="emoji-button">😀</button>
+      <div class="emoji-list">
+        <!-- Emojis will be populated here -->
+      </div>
+    </div>
   </div>
 
 </section>
@@ -127,7 +154,7 @@
 <!-- footer design -->
 <footer class="footer">
   <div class="footer-text">
-    <h4> CSCI 2020U - Software Systems Development and Integration - Assignment 02.</h4>
+    <h4> CSCI 2020U - Software Systems Development and Integration - Final Project.</h4>
   </div>
 
   <!--Scroll to Top button-->

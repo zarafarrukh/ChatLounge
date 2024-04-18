@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleWordGame.css">
+    <title>Word Scramble Game</title>
+</head>
+<body>
+<div id="wrapper">
+    <h1>Welcome to Word Scramble Game!</h1>
+    <div class="box">
+        <h2>Guess the word</h2>
+        <div id="scoreDisplay">Score: <span id="score">0</span></div>
+        <div id="wordDisplay"></div>
+        <form id="guessForm">
+            <input type="text" id="guessInput" placeholder="Enter your guess here" autofocus>
+            <button type="submit">Submit your guess</button>
+        </form>
+        <div id="message"></div>
+        <button id="restartGame" type="button">Restart</button>
+    </div>
+</div>
+
+<!--Adding JavaScript-->
+<script src="js/puzzle.js"></script>
+
+</body>
+</html>

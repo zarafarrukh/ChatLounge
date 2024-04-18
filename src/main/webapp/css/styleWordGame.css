@@ -1,0 +1,68 @@
+body {
+    background-color: #c5c9fa;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Take up the full height of the viewport */
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #a2d7d7; /* Sage green color */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box {
+    background: #D1FFFFFF;
+    padding-bottom: 70px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+button {
+    background-color: #A68BE0FF;
+    color: white;
+    border: none;
+    padding: 7px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C5C9FAFF;
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#scoreDisplay {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#reloadButton {
+    background-color: #f44336;
+    color: white;
+}

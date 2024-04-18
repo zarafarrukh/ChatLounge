@@ -42,6 +42,40 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", triggerAnimation);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var gamesColumn = document.querySelector(".games");
+    var animationTriggered = false; // Flag to track whether animation has been triggered
+
+    // Function to check if games column is in viewport
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.left >= 0 &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+
+    // Function to trigger animation for games column
+    function triggerAnimation() {
+        // If animation already triggered or element not in viewport, do nothing
+        if (animationTriggered || !isElementInViewport(gamesColumn)) {
+            return;
+        }
+
+        // Trigger animation
+        gamesColumn.classList.add("animation-active");
+        // Set flag to true to indicate animation has been triggered
+        animationTriggered = true;
+        // Remove the event listener after the animation is triggered to prevent unnecessary processing
+        window.removeEventListener("scroll", triggerAnimation);
+    }
+
+    // Show animation on scroll
+    window.addEventListener("scroll", triggerAnimation);
+});
+
 /* ChatRooms */
 let code = ""; // Variable to store the current room code
 let ws;
@@ -179,6 +213,39 @@ function enterRoom(code) {
     }
 }
 
+// Function to populate the emoji list
+function populateEmojiList() {
+    const emojis = ['😀','👋', '😄', '😁', '😆', '😅', '😂', '🤣', '😊', '😇', '🙂', '🙃', '😉', '😌','😘',
+        '😗', '😙', '😚', '😋', '😛', '😝', '😜', '😎', '🤩', '🥳', '😏', '😒',
+        '😞', '😔', '😟', '😕', '🙁', '😣', '😖', '😫', '😢', '😭', '😤', '😠', '😡', '🤬', '🤯',
+        '😳', '🥺', '😱', '😨', '😓', '🤗', '🤔', '🤭', '🤫', '🤥', '😶', '😐', '😑', '😬',
+        '🙄', '😯', '😦', '😧', '😮', '😲', '🥱', '😴', '🤤', '😪', '😵', '🤐', '🤢', '🤮','👹', '👺', '💀',
+        '❤️', '👋', '🤚', '🖐️', '🖖', '👌', '🤌', '✌️',
+        '🤞', '🤟', '🤘', '🤙', '👈', '👉', '👆','👇', '☝️', '👍', '👎', '✊', '👊', '🤛', '🤜'];
+    const emojiList = document.querySelector('.emoji-list');
+
+    emojis.forEach(emoji => {
+        const emojiButton = document.createElement('button');
+        emojiButton.textContent = emoji;
+        emojiButton.addEventListener('click', () => {
+            // Insert the clicked emoji into the input field
+            const inputField = document.querySelector('#input');
+            inputField.value += emoji;
+        });
+        emojiList.appendChild(emojiButton);
+    });
+}
+
+// Event listener for the emoji button
+document.querySelector('#emoji-button').addEventListener('click', () => {
+    const emojiList = document.querySelector('.emoji-list');
+    emojiList.classList.toggle('show'); // Toggle visibility of the emoji list
+});
+
+// Populate the emoji list when the page loads
+populateEmojiList();
+
+
 // Helper function to check if the room code already exists in the list
 function isRoomCodeInList(code) {
     //returning true if list contains the room code already
@@ -227,10 +294,99 @@ document.getElementById("enterButton").addEventListener("click", function() {
 // event listener for calling Play TicTacToe on  button click
 document.getElementById('playTicTacToe').addEventListener('click', function() {
     if (inRoom) {
-        window.location.href = 'indexGame.html';
+        //Open game in a new window
+        window.open('indexGame.html', '_blank');
     } else {
         alert('Please join a room to play Tic Tac Toe!');
     }
+});
+
+// event listener for calling play Snake Game on button click
+document.getElementById('playSnakeGame').addEventListener('click', function() {
+    if (inRoom) {
+        //Open game in a new window
+        window.open('snakeGame.html', '_blank');
+    } else {
+        alert('Please join a room to play Snake!');
+    }
+});
+
+// event listener for calling play Connect 4 on button click
+document.getElementById('playConnect4Game').addEventListener('click', function() {
+    if (inRoom) {
+        //Open game in a new window
+        window.open('connect4Game.html', '_blank');
+    } else {
+        alert('Please join a room to play Connect 4!');
+    }
+});
+
+// event listener for calling playHangman on button click
+document.getElementById('playHangman').addEventListener('click', function() {
+    if (inRoom) {
+        //Open game in a new window
+        window.open('hangmanGame.html', '_blank');
+    } else {
+        alert('Please join a room to play Hangman!');
+    }
+});
+
+// event listener for calling Play WordGame on  button click
+document.getElementById('playWordGame').addEventListener('click', function() {
+    if (inRoom) {
+        //Open game in a new window
+        window.open('wordGame.html', '_blank');
+    } else {
+        alert('Please join a room to play Word Game!');
+    }
+});
+
+document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('click', function() {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            let reaction = {"type": "reaction", "emoji": emoji.textContent};
+            ws.send(JSON.stringify(reaction));
+        }
+    });
+});
+
+// getting reaction emoji and making it animate around the screen when clicked
+document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('click', function() {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            let reaction = {"type": "reaction", "emoji": emoji.textContent};
+            ws.send(JSON.stringify(reaction));
+        }
+
+        // Create a new emoji element
+        const emojiClone = emoji.cloneNode(true);
+        emojiClone.classList.add('floating-emoji');
+        document.body.appendChild(emojiClone);
+
+        // Randomize initial position
+        const randomX = Math.random() * (window.innerWidth - emojiClone.clientWidth);
+        const randomY = Math.random() * (window.innerHeight - emojiClone.clientHeight);
+        emojiClone.style.left = randomX + 'px';
+        emojiClone.style.top = randomY + 'px';
+
+        // Randomize animation duration
+        const duration = Math.random() * 3000 + 1000;
+
+        // Add animation to the emoji
+        emojiClone.animate([
+            { transform: 'translateY(0) rotate(0)' },
+            { transform: 'translateY(-100px) rotate(360deg)' }
+        ], {
+            duration: duration,
+            iterations: 1,
+            easing: 'ease-in-out'
+        });
+
+        // Remove the emoji element after animation completes
+        emojiClone.addEventListener('animationend', function() {
+            emojiClone.remove();
+        });
+    });
 });
 
 //refresh chat function

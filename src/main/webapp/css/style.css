@@ -80,7 +80,7 @@ textarea {
 
 :root {
     --bg-color: #c5c9fa;
-    --second-bg-color: #dffafa;
+    --second-bg-color: #d1ffff;
     --text-color: #000000	;
     --main-color: #a68be0;
 }
@@ -376,8 +376,8 @@ ul li a:hover:before{
     }
 }
 
-.home-content .coffeeicon {
-    width: 65px;
+.home-content .gameicon {
+    width: 75px;
     height: auto;
     margin-left: 8px;
     margin-bottom: 20px;
@@ -386,6 +386,11 @@ ul li a:hover:before{
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-content h4 {
+    font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -514,8 +519,8 @@ styledh3Content {
     align-items: center;
 }
 
-/*Create chatroom button*/
-#createButton {
+/* Refresh chat and Create chatroom buttons */
+#RefreshChat, #createButton {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
     border: 2px solid var(--main-color);
     color: white;
@@ -541,26 +546,9 @@ styledh3Content {
     box-shadow: none;
 }
 
-/* Refresh Chat Button */
-#RefreshChat {
-    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
-    border: 2px solid var(--main-color);
-    color: white;
-    padding: 3px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 15px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 #RefreshChat:hover {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
-    transform: scale(1.02);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -652,15 +640,17 @@ a {
     transform: translateX(0); }
 .cta:active {
     transform: scale(0.96); }
+.flex-box {
+    display:flex;
+}
 
-
-
-/*Play tic tac toe game button*/
-#playTicTacToe {
-    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
+/*Play Word game button*/
+/* Existing styles for the "play word game" button */
+#playWordGame, #playTicTacToe, #playHangman, #playConnect4Game, #playSnakeGame {
+    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
     border: 2px solid var(--main-color);
     color: white;
-    padding: 3px 20px;
+    padding: 10px 11px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -672,12 +662,102 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#playTicTacToe:hover {
-    background: linear-gradient(to bottom, #dc4b4b 0%, #dc4b4b 100%);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+/* Additional styles for the button hover effect */
+#playWordGame:hover {
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
+    animation: slidebg 1.5s linear infinite;
+    color:#000;
 }
 
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+#playWordGame:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
+}
+
+/* Additional styles for the button hover effect */
+#playTicTacToe:hover {
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
+    animation: slidebg 1.5s linear infinite;
+    color:#000;
+}
+
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
 #playTicTacToe:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
+}
+
+/*Play Hangman game button*/
+
+#playHangman:hover {
+    background: linear-gradient(to bottom, #554bdc 0%, #7b4bdc 100%);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+/* Additional styles for the button hover effect */
+#playHangman:hover {
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
+    animation: slidebg 1.5s linear infinite;
+    color:#000;
+}
+
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+#playHangman:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
+}
+
+
+/* Additional styles for the button hover effect */
+#playSnakeGame:hover {
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
+    animation: slidebg 1.5s linear infinite;
+    color:#000;
+}
+
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+#playSnakeGame:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    box-shadow: none;
+}
+
+/* Additional styles for the button hover effect */
+#playConnect4Game:hover {
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
+    animation: slidebg 1.5s linear infinite;
+    color:#000;
+}
+
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+#playConnect4Game:active {
     transform: scale(0.95); /* Shrink the button slightly */
     box-shadow: none;
 }
@@ -701,7 +781,7 @@ a {
     width: 80%;
     background: #e3ebff;
     padding: 10px;
-    box-shadow: -8px 8px 0px rgba(37, 37, 37, 0.3);
+    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
 }
 .wrapper .input-data{
     height: 40px;
@@ -750,13 +830,11 @@ a {
     transform: scaleX(1);
 }
 
-
-
 .wrapper2{
     width: 80%;
     background: #E3EBFFFF;
     padding: 30px;
-    box-shadow: -8px 8px 0px rgba(37, 37, 37, 0.3);
+    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
 }
 .wrapper2 .chat-input{
     height: 40px;
@@ -803,6 +881,111 @@ a {
 .chat-input input:focus ~ .underline:before,
 .chat-input input:valid ~ .underline:before{
     transform: scaleX(1);
+}
+
+/* CSS for the games column */
+.games {
+    opacity: 0;
+    width: 20%;
+    float: right;
+    padding: 20px;
+    background-color: #c7baee; /* Background color for the games column */
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    box-shadow: 4px 0 10px rgba(140, 0, 255, 0.7); /* Drop shadow */
+}
+
+/* Additional Fancy Animation */
+.games.animation-active {
+    opacity: 1;
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Styling for the games list */
+.games h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.games ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.games li {
+    margin-bottom: 15px;
+}
+
+.games a {
+    text-decoration: none;
+    color: #fff; /* Slightly lighter text color */
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.games a:hover {
+    color: #000; /* Darker text color on hover */
+}
+
+
+/*EMOJI BUTTON*/
+#emoji-button {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transition effect */
+}
+
+#emoji-button:hover {
+    background-color: #f0f0f0;
+    border-color: #999999;
+    color: #555555;
+}
+
+.emoji-picker {
+    position: relative;
+}
+
+.emoji-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--second-bg-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-list.show {
+    display: block;
+}
+
+.emoji-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
 }
 
 
@@ -914,6 +1097,11 @@ h3 {
     }
 
     .home-content h3 {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .home-content h4 {
         font-size: 2rem;
         font-family: 'Poppins', sans-serif;
     }

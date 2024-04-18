@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5c9fa;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.color-pickers {
+    display: flex;
+    flex-direction: column;
+}
+
+.snake-color-container,
+.food-color-container {
+    margin-bottom: 10px;
+}
+
+.snake-color-container label,
+.food-color-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.game-container {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.snake-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+canvas {
+    border: 1px solid #333;
+    background-color: #333;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 18px;
+}
