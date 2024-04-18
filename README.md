@@ -37,9 +37,8 @@ Each chat room has a unique code for separate discussions. The server handles us
 
 <p align="center">
    <img src="chatLounge.png" alt="ChatLounge" width="700">
-</p>
-<p align="center">
    <img src="reactions.png" alt="floating reactions" width="700">
+  <img src="src/main/webapp/img/connect4demo.png" alt="Connect 4 game" width="700">
 </p>
 
 ## Key Features
