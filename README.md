@@ -12,7 +12,10 @@ Each chat room has a unique code for separate discussions. The server handles us
 
 ### This endeavor is the result of a collaborative effort harnessing the collective expertise of Zara Farrukh, Rabia Chattha, Syeda Bisha Fatima, and Manal Afzal.
 
-ADD DEMO VIDEO AND SCREENSHOT HERE:
+ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
+<p align="center">
+   <img src="chatLounge.png" alt="ChatLounge" width="700">
+</p>
 
 ## Key Features
 - Seamless chat refreshing functionality to ensure the latest conversations are readily available.
