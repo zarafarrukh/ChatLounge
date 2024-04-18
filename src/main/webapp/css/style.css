@@ -659,9 +659,11 @@ a {
 .flex-box {
     display:flex;
 }
-/*Play tic tac toe game button*/
+
+/*Play Word game button*/
+/* Existing styles for the "play word game" button */
 #playWordGame {
-    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
+    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
     border: 2px solid var(--main-color);
     color: white;
     padding: 3px 20px;
@@ -676,9 +678,17 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Additional styles for the button hover effect */
 #playWordGame:hover {
-    background: linear-gradient(to bottom, #554bdc 0%, #7b4bdc 100%);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(90deg, #e13683 0%, #ff2df5 49%, #1100ff 80%, #7659e0 100%);
+    animation: slidebg 1.5s linear infinite;
+}
+
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
 }
 
 #playWordGame:active {
@@ -707,7 +717,18 @@ a {
     background: linear-gradient(to bottom, #554bdc 0%, #7b4bdc 100%);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
+/* Additional styles for the button hover effect */
+#playTicTacToe:hover {
+    background-image: linear-gradient(90deg, #e13683 0%, #ff2df5 49%, #1100ff 80%, #7659e0 100%);
+    animation: slidebg 1.5s linear infinite;
+}
 
+/* Animation keyframes for the hover effect */
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
 #playTicTacToe:active {
     transform: scale(0.95); /* Shrink the button slightly */
     box-shadow: none;
@@ -781,8 +802,6 @@ a {
     transform: scaleX(1);
 }
 
-
-
 .wrapper2{
     width: 80%;
     background: #E3EBFFFF;
@@ -834,6 +853,52 @@ a {
 .chat-input input:focus ~ .underline:before,
 .chat-input input:valid ~ .underline:before{
     transform: scaleX(1);
+}
+
+/*EMOJI BUTTON*/
+#emoji-button {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transition effect */
+}
+
+#emoji-button:hover {
+    background-color: #f0f0f0;
+    border-color: #999999;
+    color: #555555;
+}
+
+.emoji-picker {
+    position: relative;
+}
+
+.emoji-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--second-bg-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-list.show {
+    display: block;
+}
+
+.emoji-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
 }
 
 

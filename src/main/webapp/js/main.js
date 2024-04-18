@@ -179,6 +179,38 @@ function enterRoom(code) {
     }
 }
 
+// Function to populate the emoji list
+function populateEmojiList() {
+    const emojis = ['😀', '😄', '😁', '😆', '😅', '😂', '🤣', '😊', '😇', '🙂', '🙃', '😉', '😌','😘',
+        '😗', '😙', '😚', '😋', '😛', '😝', '😜', '😎', '🤩', '🥳', '😏', '😒',
+        '😞', '😔', '😟', '😕', '🙁', '😣', '😖', '😫', '😩', '😢', '😭', '😤', '😠', '😡', '🤬', '🤯',
+        '😳', '🥺', '😱', '😨', '😰', '😥', '😓', '🤗', '🤔', '🤭', '🤫', '🤥', '😶', '😐', '😑', '😬',
+        '🙄', '😯', '😦', '😧', '😮', '😲', '🥱', '😴', '🤤', '😪', '😵', '🤐', '🥴', '🤢', '🤮','👹', '👺', '💀', '❤️', '💛', '💚', '💙', '💜', '🖤', '💔', '❣️',
+        '💕', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '❤️‍🔥', '❤️‍🩹', '❤️‍🔥', '❤️‍🩹'];
+    const emojiList = document.querySelector('.emoji-list');
+
+    emojis.forEach(emoji => {
+        const emojiButton = document.createElement('button');
+        emojiButton.textContent = emoji;
+        emojiButton.addEventListener('click', () => {
+            // Insert the clicked emoji into the input field
+            const inputField = document.querySelector('#input');
+            inputField.value += emoji;
+        });
+        emojiList.appendChild(emojiButton);
+    });
+}
+
+// Event listener for the emoji button
+document.querySelector('#emoji-button').addEventListener('click', () => {
+    const emojiList = document.querySelector('.emoji-list');
+    emojiList.classList.toggle('show'); // Toggle visibility of the emoji list
+});
+
+// Populate the emoji list when the page loads
+populateEmojiList();
+
+
 // Helper function to check if the room code already exists in the list
 function isRoomCodeInList(code) {
     //returning true if list contains the room code already
