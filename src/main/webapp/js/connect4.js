@@ -7,10 +7,43 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentPlayer = PLAYER1;
     let gameBoard = [];
     let gameOver = false;
+    let player1Emoji = "😀"; // Default emojis
+    let player2Emoji = "👽"; // Default emojis
 
     const gameBoardElem = document.getElementById("game-board");
     const statusElem = document.getElementById("status");
     const resetBtn = document.getElementById("reset-btn");
+    const player1AvatarPanel = document.getElementById("player1-avatar-panel");
+    const player2AvatarPanel = document.getElementById("player2-avatar-panel");
+
+    const player1Avatar = document.getElementById('player1-avatar-panel');
+    const player2Avatar = document.getElementById('player2-avatar-panel');
+
+    // Function to handle avatar selection
+    function selectAvatar(playerPanel, selectedEmoji) {
+        // Remove selected class from all avatars in the panel
+        playerPanel.querySelectorAll('.avatar').forEach(function(avatar) {
+            avatar.classList.remove('selected');
+        });
+        // Add selected class to the clicked avatar
+        selectedEmoji.classList.add('selected');
+    }
+
+    // Add event listener to avatar selection for Player 1
+    player1Avatar.addEventListener("click", function(event) {
+        if (event.target.classList.contains("avatar")) {
+            player1Emoji = event.target.textContent;
+            selectAvatar(player1Avatar, event.target);
+        }
+    });
+
+    // Add event listener to avatar selection for Player 2
+    player2Avatar.addEventListener("click", function(event) {
+        if (event.target.classList.contains("avatar")) {
+            player2Emoji = event.target.textContent;
+            selectAvatar(player2Avatar, event.target);
+        }
+    });
 
     // Create the game board
     function createBoard() {
@@ -67,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (gameBoard[row][col] === EMPTY) {
                 gameBoard[row][col] = currentPlayer;
                 const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
-                cell.style.backgroundColor = currentPlayer === PLAYER1 ? "red" : "yellow";
+                cell.textContent = currentPlayer === PLAYER1 ? player1Emoji : player2Emoji; // Use selected emojis
                 if (checkWin(row, col)) {
                     gameOver = true;
                     statusElem.textContent = `Player ${currentPlayer} wins!`;

@@ -19,12 +19,12 @@ h1 {
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(7, 50px);
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Flexible grid columns */
     grid-template-rows: repeat(6, 50px);
     gap: 5px;
     border: 2px solid black;
     margin: 20px auto;
-    background-color: #007bff;
+    background-color: #A68BE0FF;
 }
 
 .cell {
@@ -32,10 +32,12 @@ h1 {
     height: 50px;
     background-color: white;
     border-radius: 50%;
+    font-size:30px;
 }
 
 #status {
     margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
 }
 
 #reset-btn {
@@ -49,4 +51,27 @@ h1 {
 
 #reset-btn:hover {
     background-color: #218838;
+}
+
+.avatar-panel {
+    display: flex; /* Use flexbox to display emojis inline */
+    flex-direction: row;
+    align-items: flex-start; /* Align panels to the left */
+    margin-bottom: 20px;
+}
+
+.avatar {
+    margin-right: 25px; /* Add spacing between emojis */
+    font-size: 25px; /* Increase font size for emojis */
+}
+
+/* Add hover effect for avatars */
+.avatar:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    cursor:pointer;
+}
+
+/* Increase size for selected avatars */
+.avatar.selected {
+    transform: scale(1.8); /* Increase size */
 }
