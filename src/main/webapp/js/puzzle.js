@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const words = ["Volcano", "Unicorn", "Rocket", "Marigold", "Treasure", "Whistle", "Galaxy", "Igloo", "Pakistan", "Guitar", "Brazil", "Egypt", "Norway", "Australia"];
     let currentWord = "";
     let scrambledWord = "";
-    let score = 0;
+    let score = 0; // Initialize score
 
     function scrambleWord(word) {
         return word.split('').sort(() => Math.random() - 0.5).join('');
@@ -21,22 +21,23 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const guess = document.getElementById('guessInput').value;
         if (guess.toLowerCase() === currentWord.toLowerCase()) {
-            score++;
+            console.log('guess is correct');
             document.getElementById('message').textContent = 'Correct! Well done';
-            console.log('Celebratory effects for correct guess');
-            document.getElementById('scoreDisplay').textContent = 'Score: ' + score;
+            score++; // Increment score for correct guess
+            document.getElementById('scoreDisplay').textContent = 'Score: ' + score; // Update score display
             startGame(); // Start a new game
         } else {
-            score = 0; // Reset score to 0 if guess is wrong
+            console.log('guess is incorrect');
             document.getElementById('message').textContent = 'Wrong! Try again';
+            score = 0; // Reset score to 0 for incorrect guess
             document.getElementById('scoreDisplay').textContent = 'Score: ' + score; // Update score display
         }
         document.getElementById('guessInput').value = '';
     });
 
     document.getElementById('restartGame').addEventListener('click', function(event) {
-        score = 0;
-        document.getElementById('scoreDisplay').textContent = 'Score: ' + score;
+        score = 0; // Reset score to 0 on restart
+        document.getElementById('scoreDisplay').textContent = 'Score: ' + score; // Update score display
         startGame();
     });
 

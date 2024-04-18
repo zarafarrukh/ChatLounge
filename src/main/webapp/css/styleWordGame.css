@@ -51,6 +51,12 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
+#scoreDisplay {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 p {
     font-size: 1rem;
     color: #666;
