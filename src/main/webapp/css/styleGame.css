@@ -109,8 +109,14 @@ button:hover {
     transition: transform 0.3s;
 }
 
+.emoji:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    cursor:pointer;
+}
+
+
 .emoji.selected {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 

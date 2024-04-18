@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="added emoji reaction floating feature =&gt; really fun">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/game.js" afterDir="false" />
-    </list>
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Added more customizations to connect 4 game" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713467292187</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added more customizations to connect 4 game">
+      <option name="closed" value="true" />
+      <created>1713469970938</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713469970938</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +329,7 @@
     <MESSAGE value="added conditional for game-&gt; must join a room first" />
     <MESSAGE value="added avatars and updated game code to accomodate it" />
     <MESSAGE value="added emoji reaction floating feature =&gt; really fun" />
-    <option name="LAST_COMMIT_MESSAGE" value="added emoji reaction floating feature =&gt; really fun" />
+    <MESSAGE value="Added more customizations to connect 4 game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more customizations to connect 4 game" />
   </component>
 </project>
