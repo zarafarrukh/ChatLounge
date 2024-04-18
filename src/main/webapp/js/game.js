@@ -193,7 +193,7 @@ reactions.forEach(reaction => {
     });
 });
 
-// Function to append reaction to the chat log
+// Function to append reaction to the chat log + floating emoji reactions
 function appendToChatLog(reaction) {
     const numEmojis = 20;
     const sizeEmoji = 30;
