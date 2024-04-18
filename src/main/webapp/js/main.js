@@ -311,6 +311,16 @@ document.getElementById('playSnakeGame').addEventListener('click', function() {
     }
 });
 
+// event listener for calling play Connect 4 on button click
+document.getElementById('playConnect4Game').addEventListener('click', function() {
+    if (inRoom) {
+        //Open game in a new window
+        window.open('connect4Game.html', '_blank');
+    } else {
+        alert('Please join a room to play Connect 4!');
+    }
+});
+
 // event listener for calling playHangman on button click
 document.getElementById('playHangman').addEventListener('click', function() {
     if (inRoom) {
