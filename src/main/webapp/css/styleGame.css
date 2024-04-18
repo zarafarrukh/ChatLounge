@@ -9,6 +9,10 @@ body, html {
     color: #000; /* Match text color */
 }
 
+#container {
+    display: flex;
+}
+
 #gameContainer {
     width: 100%;
     max-width: 400px;
@@ -67,14 +71,15 @@ button:hover {
 }
 
 /* emoji panel styling */
-#emojiPanel {
+#emojiPanel, #reactionPanel {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
-.emoji {
+.emoji, .reaction {
     font-size: 30px;
     cursor: pointer;
     margin: 5px;

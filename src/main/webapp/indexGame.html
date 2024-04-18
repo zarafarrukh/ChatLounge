@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="css/styleGame.css">
 </head>
 <body>
+<div id="container">
+    <!-- Emoji selection panel -->
+    <div id="emojiPanel">
+        <div style="text-align: center; margin-top: 20px;">
+            <h3>Select 2 Avatars:</h3>
+
+            <div style="display: flex; justify-content: center;">
+                <div class="emoji" data-emoji="❤️">❤️</div>
+                <div class="emoji" data-emoji="😼">😼</div>
+                <div class="emoji" data-emoji="⭕">⭕</div>
+                <div class="emoji" data-emoji="❌">❌</div>
+                <div class="emoji" data-emoji="💀">💀</div>
+                <div class="emoji" data-emoji="🪦">🪦</div>
+                <div class="emoji" data-emoji="🤡">❓</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <h3>Developers Choices:</h3>
+            <div style="display: flex; justify-content: center;">
+                <div class="emoji" data-emoji="😭">😭</div>
+                <div class="emoji" data-emoji="😎">😎</div>
+                <div class="emoji" data-emoji="🫠">🫠</div>
+                <div class="emoji" data-emoji="👺">👺</div>
+            </div>
+        </div>
+
+    </div>
+
 <div id="gameContainer">
     <h1>Welcome to Tic Tac Toe</h1>
     <div id="cellContainer">
@@ -23,34 +52,6 @@
     </div>
     <h2 id="statusText"></h2>
     <button id="restartButton">Play Again</button>
-</div>
-
-<!-- Emoji selection panel -->
-<div id="emojiPanel">
-    <div style="text-align: center; margin-top: 20px;">
-        <h3>Select 2 Avatars:</h3>
-
-        <div style="display: flex; justify-content: center;">
-            <div class="emoji" data-emoji="❤️">❤️</div>
-            <div class="emoji" data-emoji="😼">😼</div>
-            <div class="emoji" data-emoji="⭕">⭕</div>
-            <div class="emoji" data-emoji="❌">❌</div>
-            <div class="emoji" data-emoji="💀">💀</div>
-            <div class="emoji" data-emoji="🪦">🪦</div>
-            <div class="emoji" data-emoji="🤡">❓</div>
-        </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <h3>Developers Choices:</h3>
-        <div style="display: flex; justify-content: center;">
-            <div class="emoji" data-emoji="😭">😭</div>
-            <div class="emoji" data-emoji="😎">😎</div>
-            <div class="emoji" data-emoji="🫠">🫠</div>
-            <div class="emoji" data-emoji="👺">👺</div>
-        </div>
-    </div>
-
 </div>
 
 <!-- Reaction panel -->
@@ -69,10 +70,14 @@
     </div>
 </div>
 
+<!-- Chat log -->
+<div id="chatLog" class="chat-log"></div>
+
+
 <!--Adding confetti-->
 <script src="js/confetti.js"></script>
 <script src="js/game.js"></script>
 
-
+</div>
 </body>
 </html>

@@ -180,3 +180,23 @@ function restartGame(){
     resetEmojis();
 
 }
+
+// Add event listeners to emoji reactions
+const reactionPanel = document.getElementById('reactionPanel');
+const reactions = reactionPanel.querySelectorAll('.reaction');
+const chatLog = document.getElementById('chatLog');
+
+reactions.forEach(reaction => {
+    reaction.addEventListener('click', () => {
+        const selectedReaction = reaction.getAttribute('data-reaction');
+        appendToChatLog(selectedReaction);
+    });
+});
+
+// Function to append reaction to the chat log
+function appendToChatLog(reaction) {
+    const reactionElement = document.createElement('div');
+    reactionElement.textContent = `Reaction: ${reaction}`;
+    chatLog.appendChild(reactionElement);
+}
+
