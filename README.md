@@ -80,4 +80,4 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 [3] Font Awesome Icons: [Font Awesome](https://fontawesome.com/)
 - The application uses Font Awesome icons for enhanced visual elements. You can explore and customize the available icons on the Font Awesome website: [Font Awesome Icons](https://fontawesome.com/icons)
 
-[4] COnfetti Animations from Coding Fire source code (confetti.js)
+[4] Confetti Animations from [Coding Fire](https://www.youtube.com/watch?v=quSR_ZrVz6Y) source code (confetti.js)
