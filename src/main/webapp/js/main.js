@@ -301,6 +301,17 @@ document.getElementById('playTicTacToe').addEventListener('click', function() {
     }
 });
 
+
+// event listener for calling playHangman on button click
+document.getElementById('playHangman').addEventListener('click', function() {
+    if (inRoom) {
+        //Open game in a new window
+        window.open('hangmanGame.html', '_blank');
+    } else {
+        alert('Please join a room to play Hangman!');
+    }
+});
+
 // event listener for calling Play WordGame on  button click
 document.getElementById('playWordGame').addEventListener('click', function() {
     if (inRoom) {
