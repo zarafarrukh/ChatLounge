@@ -41,4 +41,5 @@ Key Features:
 4. Start GlassFish server and deploy application on selecting ▶
 
 ## Other Resources
---- Any packages, lectures, external links used.
+[1] CSCI2020U - Assignment 2: ChatLounge
+  - `[https://github.com/OntarioTech-CS-program/ChatServer](https://github.com/OntarioTech-CS-program/w24-csci2020u-assignment02-afzal-chattha-farrukh-fatima)`
