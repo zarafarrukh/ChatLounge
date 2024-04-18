@@ -519,8 +519,8 @@ styledh3Content {
     align-items: center;
 }
 
-/*Create chatroom button*/
-#createButton {
+/* Refresh chat and Create chatroom buttons */
+#RefreshChat, #createButton {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
     border: 2px solid var(--main-color);
     color: white;
@@ -546,22 +546,6 @@ styledh3Content {
     box-shadow: none;
 }
 
-/* Refresh Chat Button */
-#RefreshChat {
-    background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
-    border: 2px solid var(--main-color);
-    color: white;
-    padding: 3px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 15px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 #RefreshChat:hover {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
@@ -755,7 +739,7 @@ a {
     width: 80%;
     background: #e3ebff;
     padding: 10px;
-    box-shadow: -8px 8px 0px rgba(37, 37, 37, 0.3);
+    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
 }
 .wrapper .input-data{
     height: 40px;
@@ -808,7 +792,7 @@ a {
     width: 80%;
     background: #E3EBFFFF;
     padding: 30px;
-    box-shadow: -8px 8px 0px rgba(37, 37, 37, 0.3);
+    box-shadow: -8px 8px 0 rgba(37, 37, 37, 0.3);
 }
 .wrapper2 .chat-input{
     height: 40px;
@@ -860,7 +844,7 @@ a {
 /* CSS for the games column */
 .games {
     opacity: 0;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%;
     float: right;
     padding: 20px;
     background-color: #c7baee; /* Background color for the games column */
@@ -889,10 +873,10 @@ a {
 
 /* Styling for the games list */
 .games h2 {
-    font-size: 24px; /* Larger font size */
-    margin-bottom: 15px; /* Increased margin */
+    font-size: 24px;
+    margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
-    color: #fff; /* Darker text color */
+    color: #fff;
 }
 
 .games ul {
@@ -901,7 +885,7 @@ a {
 }
 
 .games li {
-    margin-bottom: 15px; /* Increased margin */
+    margin-bottom: 15px;
 }
 
 .games a {
