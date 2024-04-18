@@ -666,7 +666,7 @@ a {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
     border: 2px solid var(--main-color);
     color: white;
-    padding: 3px 20px;
+    padding: 10px 11px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -680,8 +680,9 @@ a {
 
 /* Additional styles for the button hover effect */
 #playWordGame:hover {
-    background-image: linear-gradient(90deg, #e13683 0%, #ff2df5 49%, #1100ff 80%, #7659e0 100%);
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
     animation: slidebg 1.5s linear infinite;
+    color:#000;
 }
 
 /* Animation keyframes for the hover effect */
@@ -701,7 +702,7 @@ a {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%); /* Gradient background */
     border: 2px solid var(--main-color);
     color: white;
-    padding: 3px 20px;
+    padding: 10px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -719,8 +720,9 @@ a {
 }
 /* Additional styles for the button hover effect */
 #playTicTacToe:hover {
-    background-image: linear-gradient(90deg, #e13683 0%, #ff2df5 49%, #1100ff 80%, #7659e0 100%);
+    background-image: linear-gradient(90deg, #bcffff 0%, #85ccdc 49%, #a2d7d9 80%, #afe7f1 100%);
     animation: slidebg 1.5s linear infinite;
+    color:#000;
 }
 
 /* Animation keyframes for the hover effect */
@@ -854,6 +856,46 @@ a {
 .chat-input input:valid ~ .underline:before{
     transform: scaleX(1);
 }
+
+/* CSS for the games column */
+.games {
+    width: 20%; /* Adjust the width as needed */
+    float: right;
+    padding: 20px;
+    background-color: #c7baee; /* Background color for the games column */
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    box-shadow: 4px 0px 10px rgba(209, 255, 255, 0.7); /* Drop shadow */
+}
+
+/* Styling for the games list */
+.games h2 {
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 15px; /* Increased margin */
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Darker text color */
+}
+
+.games ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.games li {
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.games a {
+    text-decoration: none;
+    color: #fff; /* Slightly lighter text color */
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.games a:hover {
+    color: #000; /* Darker text color on hover */
+}
+
 
 /*EMOJI BUTTON*/
 #emoji-button {

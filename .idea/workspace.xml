@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="updated word game">
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="added chat for players' reactions in TicTacToe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styleGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styleGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +262,7 @@
       <workItem from="1713382983969" duration="191000" />
       <workItem from="1713389032689" duration="911000" />
       <workItem from="1713438532127" duration="1294000" />
-      <workItem from="1713439852225" duration="7835000" />
+      <workItem from="1713439852225" duration="10066000" />
     </task>
     <task id="LOCAL-00001" summary="Versioned files commit">
       <option name="closed" value="true" />
@@ -369,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713443317191</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added chat for players' reactions in TicTacToe">
+      <option name="closed" value="true" />
+      <created>1713449035273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713449035273</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +407,7 @@
     <MESSAGE value="updated emoji functionality" />
     <MESSAGE value="added screenshot with emoji picker" />
     <MESSAGE value="updated word game" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated word game" />
+    <MESSAGE value="added chat for players' reactions in TicTacToe" />
+    <option name="LAST_COMMIT_MESSAGE" value="added chat for players' reactions in TicTacToe" />
   </component>
 </project>
