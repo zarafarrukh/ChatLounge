@@ -63,7 +63,13 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
     - Set default URL as `http://localhost:8080/WSChatServer-1.0-SNAPSHOT/`
 4. Start GlassFish server and deploy application on selecting ▶
 
-### This endeavor is the result of a collaborative effort harnessing the collective expertise of Zara Farrukh, Rabia Chattha, Syeda Bisha Fatima, and Manal Afzal.
+
+# Developers:
+### This endeavor is the result of a collaborative effort harnessing the collective expertise of:
+- Zara Farrukh.
+- Syeda Bisha Fatima.
+- Rabia Chatta.
+- Manal Afzal.
 
 ## Other Resources
 [1] CSCI2020U - Assignment 2: ChatLounge
