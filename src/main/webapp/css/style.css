@@ -518,7 +518,7 @@ a {
     background: linear-gradient(to bottom, #a68be0 0%, #af93c2 100%);
     border: 2px solid var(--main-color);
     color: white;
-    padding: 10px 11px;
+    padding: 13px 9px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -642,6 +642,8 @@ a {
 /* Adjust the width of the chat box if needed */
 .section-chat .wrapper {
     width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 /* Adjust the width of the textarea if needed */
@@ -777,7 +779,7 @@ a {
 }
 
 /* CSS for the games column */
-.container {
+.gamesContainer {
     display: flex; /* Use flexbox to align items */
 }
 
@@ -788,12 +790,14 @@ a {
 .games-right {
     opacity: 0;
     width: 20%;
+    height:510px;
     padding: 20px;
     background-color: #c7baee;
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
     box-shadow: 4px 0 10px rgba(140, 0, 255, 0.7);
     margin: auto;
+    margin-top:100px;
 }
 
 /* Additional Fancy Animation */
@@ -822,9 +826,21 @@ a {
     margin-right:25px;
 }
 
+.leftgames-image-container {
+    float: right; /* This will float the container to the right */
+    margin-left: 55px;
+
+}
+
+.rightgames-image-container {
+    float:left; /* This will float the container to the left */
+    margin-right: 55px;
+}
+
 .games-left {
     opacity: 0;
     width: 20%;
+    height:510px;
     padding: 20px;
     background-color: #c7baee; /* Background color for the games-left column */
     border-top-left-radius: 90px; /* Adjusted to border-top-left-radius */
@@ -832,6 +848,7 @@ a {
     box-shadow: -4px 0 10px rgba(140, 0, 255, 0.7); /* Adjusted box shadow */
     margin:auto;
     float:left;
+    margin-top:100px;
 }
 
 /* Additional Fancy Animation */
