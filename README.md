@@ -8,7 +8,7 @@ ChatLounge is a robust chat server featuring multiple chat rooms and __gaming fu
 
 Each chat room has a unique code for separate discussions. The server handles user authentication and authorization. Upon entering a room, users provide a username, receive a welcome message, and can exchange messages with timestamps.
 
-### Games: 
+# Games: 
 
 ## Tic Tac Toe Game
 - Players can choose emojis as their game pieces.
@@ -33,8 +33,6 @@ Each chat room has a unique code for separate discussions. The server handles us
 - Players take turns dropping colored discs into a vertical grid.
 - The goal is to connect four of one's own discs vertically, horizontally, or diagonally before the opponent does.
 
-
-### This endeavor is the result of a collaborative effort harnessing the collective expertise of Zara Farrukh, Rabia Chattha, Syeda Bisha Fatima, and Manal Afzal.
 
 ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 <p align="center">
@@ -61,6 +59,8 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 3. Configure Glassfish and edit Run Configurations
     - Set default URL as `http://localhost:8080/WSChatServer-1.0-SNAPSHOT/`
 4. Start GlassFish server and deploy application on selecting ▶
+
+### This endeavor is the result of a collaborative effort harnessing the collective expertise of Zara Farrukh, Rabia Chattha, Syeda Bisha Fatima, and Manal Afzal.
 
 ## Other Resources
 [1] CSCI2020U - Assignment 2: ChatLounge
