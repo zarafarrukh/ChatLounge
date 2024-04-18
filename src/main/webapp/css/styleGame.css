@@ -1,3 +1,5 @@
+
+
 body, html {
     height: 100%;
     margin: 0;
@@ -7,6 +9,10 @@ body, html {
     justify-content: center;
     align-items: center;
     color: #000; /* Match text color */
+}
+
+#container {
+    display: flex;
 }
 
 #gameContainer {
@@ -67,14 +73,15 @@ button:hover {
 }
 
 /* emoji panel styling */
-#emojiPanel {
+#emojiPanel, #reactionPanel {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
-.emoji {
+.emoji, .reaction {
     font-size: 30px;
     cursor: pointer;
     margin: 5px;
@@ -84,3 +91,45 @@ button:hover {
 .emoji.selected {
     transform: scale(1.2);
 }
+
+/* Emoji panel styling */
+#emojiPanel, #reactionPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative; /* Added position relative for absolute positioning */
+}
+
+.emoji, .reaction {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.emoji:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    cursor:pointer;
+}
+
+
+.emoji.selected {
+    transform: scale(1.5);
+}
+
+
+/*Styling for falling emoji reactions*/
+.falling-emoji {
+    position: fixed;
+    font-size: 30px;
+    user-select: none;
+}
+
+@keyframes fallAnimation {
+    0% { top: -50px; opacity: 0; transform: rotateZ(0deg); }
+    100% { top: 100vh; opacity: 1; transform: rotateZ(360deg); }
+}
+
+

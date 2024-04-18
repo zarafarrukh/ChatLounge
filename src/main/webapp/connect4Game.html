@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="css/styleConnect4Game.css">
+</head>
+<body>
+<div class="avatar-panels">
+    <h2>Player 1 Avatar</h2>
+    <div class="avatar-panel" id="player1-avatar-panel">
+        <!-- Add emojis for selection -->
+        <div class="avatar" data-emoji="😀">😀</div>
+        <div class="avatar" data-emoji="🥳">🥳</div>
+        <div class="avatar" data-emoji="😎">😎</div>
+        <div class="avatar" data-emoji="🫠">🫠</div>
+    </div>
+    <h2>Player 2 Avatar</h2>
+    <div class="avatar-panel" id="player2-avatar-panel">
+        <!-- Add emojis for selection -->
+        <div class="avatar" data-emoji="👽">👽</div>
+        <div class="avatar" data-emoji="🤖">🤖</div>
+        <div class="avatar" data-emoji="👺">👺</div>
+        <div class="avatar" data-emoji="👑">👑</div>
+    </div></div>
+<div class="container">
+    <h1>Welcome to Connect Four!</h1>
+
+    <div id="game-board"></div>
+    <div id="status"></div>
+    <button id="reset-btn">Reset Game</button>
+</div>
+
+<script src="js/connect4.js"></script>
+</body>
+</html>

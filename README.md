@@ -1,34 +1,57 @@
-# <img src="src/main/webapp/img/logo.png" alt="ChatLounge Logo" width="150"> CHATLOUNGE - Final Project
+# <img src="src/main/webapp/img/logo.png" alt="ChatLounge Logo" width="120"> CHATLOUNGE - Final Project
 
 
 ## Project Information
 
-ChatLounge, presents the design and implementation of a robust chat server capable of hosting multiple chat rooms with a multitude of users. Leveraging the Java WebSocket API, this server enables seamless real-time communication among users within distinct chat rooms. With a focus on efficiency, the server adeptly manages WebSocket connections between clients, ensuring smooth and uninterrupted interactions. A key component of this project requires the development of robust room management features. Users are empowered with the flexibility to either join pre-existing chat rooms or create new ones as per their requirements. Users can choose between two games to play, Tic Tac Toe or scrambled Word game.
+### Step into ChatLounge, where gaming meets great conversation! 
+ChatLounge is a robust chat server featuring multiple chat rooms and __gaming functionality__ powered by the Java WebSocket API. It facilitates seamless real-time communication among users, managing connections efficiently. Users can join existing rooms or create new ones. Moreover, users have the options to play games: Tic Tac Toe and a Word game.
 
-Each chat room is distinguished by a unique alphanumeric code, guaranteeing separate environments for discussions. The server will oversee user authentication and authorization processes within these rooms. 
+Each chat room has a unique code for separate discussions. The server handles user authentication and authorization. Upon entering a room, users provide a username, receive a welcome message, and can exchange messages with timestamps.
 
-Upon entering a chat room, users will be prompted to supply a username for identification purposes. Subsequently, the server will extend a warm welcome to new participants and broadcast notifications to existing occupants of the room. Moreover, messages exchanged within chat rooms will be equipped with usernames and timestamps, offering chronological context to conversations.
+# Games: 
 
-Tic Tac Toe Game:
-In this interactive game, users are presented with a dynamic Tic Tac Toe experience. They have the option to select from a variety of emojis to represent players, including four developer-specific emojis. Throughout the game, players can engage further by sending reaction emojis, which animate within the web browser upon selection. Upon conclusion of each round, users can opt to play again. Notably, upon achieving victory in the game, a celebratory confetti animation ensues until the user initiates another game or navigates back to the chat server.
+## Tic Tac Toe ❌⭕
+- Players can choose emojis as their game pieces.
+- Use reaction emojis during gameplay for interactive communication, members of the room can send reaction emojis visible to all members inside the game
+- Celebratory animations play upon winning a game and are reset for each game
 
-Scrambled Word Game:
-This intellectually stimulating game challenges users with deciphering scrambled words. Participants are presented with a scrambled word and prompted to input their guess into a designated box, followed by clicking the "submit your guess" button. If the entered word aligns with the solution, the user emerges victorious. However, in the event of an incorrect guess, users persist until the correct word is deduced. Players also retain the option to engage in subsequent rounds for continuous enjoyment.
+## Word Game 🔠
+- Players decipher scrambled words.
+- Submit guesses to win rounds.
+- Enjoy continuous engagement with multiple rounds.
 
-### This endeavor is the result of a collaborative effort harnessing the collective expertise of Zara Farrukh, Rabia Chattha, Syeda Bisha Fatima, and Manal Afzal.
+## Snake Game 🐍
+- Navigate a snake around the game board to eat food and grow longer.
+- Avoid collisions with walls and the snake's own body to survive and achieve a high score.
+- Customize game by changing speed and color of the snake and its food
 
-ADD DEMO VIDEO AND SCREENSHOT HERE:
+## Hangman 🪢
+- Players guess the words.
+- Submit letters to win rounds.
+- Word is revelaed after limited tries.
+  
+## Connect 4 🔴🟡
+- Personalized gaming experience for players selecting emoji avatars to represent them during gameplay.
+- Players take turns dropping emoji discs into a grid.
+- The goal is to connect four of one's own discs vertically, horizontally, or diagonally before the opponent does.
 
-## Improvements:
-Key Features: 
+<p align="center">
+   <img src="chatLounge.png" alt="ChatLounge" width="700">
+</p>
+<p align="center">
+   <img src="reactions.png" alt="floating reactions" width="700">
+</p>
+
+## Key Features
 - Seamless chat refreshing functionality to ensure the latest conversations are readily available.
 - Robust chatroom history preservation, allowing users to access past discussions effortlessly.
 - Advanced error handling mechanisms designed to promptly alert users and guide them through the web application for enhanced user experience.
 - Convenient "Scroll to Top" feature for effortless navigation within the chat interface.
 - Broadcast User Entrance/Exits to rest of the users in the chatroom.
+- The chat now includes an emoji selection functionality, allowing users to easily insert emojis into their messages, thereby enhancing expressiveness and communication.
 - The games feature seamlessly integrated animations, elevating the visual aesthetics and greater user engagement
 - The implementation of "Play Again" functionalities empowers users to extend their gaming experiences, fostering prolonged enjoyment and maximizing user retention.
-- Users can select emojis from a comprehensive emoji selection interface, enriching their gaming experience with an interactive and enjoyable element, thus enhancing overall engagement.
+- In Tic Tac Toe, users can select emojis as avatars from a comprehensive emoji selection interface, enriching their gaming experience with an interactive and enjoyable element, thus enhancing overall engagement.
 
   
 ## How to Run
@@ -37,9 +60,24 @@ Key Features:
 1. Clone the repository: `git clone https://github.com/OntarioTech-CS-program/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal.git`
 2. Launch intelliJ IDEA ULTIMATE and navigate to project directory
 3. Configure Glassfish and edit Run Configurations
-    - Set default URL as `URL HERE`
+    - Set default URL as `http://localhost:8080/WSChatServer-1.0-SNAPSHOT/`
 4. Start GlassFish server and deploy application on selecting ▶
+
+
+## Developers:
+### This endeavor is the result of a collaborative effort harnessing the collective expertise of:
+- Zara Farrukh.
+- Syeda Bisha Fatima.
+- Rabia Chatta.
+- Manal Afzal.
 
 ## Other Resources
 [1] CSCI2020U - Assignment 2: ChatLounge
   - `[https://github.com/OntarioTech-CS-program/ChatServer](https://github.com/OntarioTech-CS-program/w24-csci2020u-assignment02-afzal-chattha-farrukh-fatima)`
+
+[2] Font: [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)
+
+[3] Font Awesome Icons: [Font Awesome](https://fontawesome.com/)
+- The application uses Font Awesome icons for enhanced visual elements. You can explore and customize the available icons on the Font Awesome website: [Font Awesome Icons](https://fontawesome.com/icons)
+
+[4] Confetti Animations from [Coding Fire](https://www.youtube.com/watch?v=quSR_ZrVz6Y) source code (confetti.js)

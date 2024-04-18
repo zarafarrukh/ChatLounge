@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="51fb3af3-914e-40df-b05e-f896328adaba" name="Changes" comment="Added more customizations to connect 4 game" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +26,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Manal Afzal &lt;manal.afzal@ontariotechu.net&gt;" />
-      </list>
-    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -71,14 +64,11 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;GlassFish Server.GlassFish 7.0.11.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.about.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.guess.html (1).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.guess.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.indexGame.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.wordGame.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.wordPuzzle.html.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.game.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
@@ -110,9 +100,6 @@
       <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\manal\Desktop\School\Year 2\Sem 2\Systems Dev and Integ\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\webapp\css" />
-      <recent name="C:\Users\manal\Desktop\School\Year 2\Sem 2\Systems Dev and Integ\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\webapp\js" />
-      <recent name="C:\Users\manal\Desktop\School\Year 2\Sem 2\Systems Dev and Integ\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\webapp" />
       <recent name="C:\Users\Bisha\IdeaProjects\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\webapp\css" />
       <recent name="C:\Users\zfaus\OneDrive\Desktop\Courses\Y2_Winter\CSCI2020U\w24-csci2020u-final-project-chattha-farrukh-fatima-afzal\src\main\java\com\example" />
     </key>
@@ -190,10 +177,7 @@
         </option>
       </method>
     </configuration>
-    <configuration name="about.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp/about.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="guess.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp/guess.html" useBuiltInWebServerPort="true">
+    <configuration name="guess.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/wordPuzzle/guess.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="indexGame.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/webapp/indexGame.html" useBuiltInWebServerPort="true">
@@ -205,7 +189,7 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="wordGame.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WSChatServer-1.0-SNAPSHOT/wordGame.html">
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/w24-csci2020u-final-project-chattha-farrukh-fatima-afzal/src/main/frontend/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -223,20 +207,19 @@
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.GlassFish 7.0.11" />
-      <item itemvalue="JavaScript Debug.guess.html" />
-      <item itemvalue="JavaScript Debug.about.html" />
-      <item itemvalue="JavaScript Debug.wordGame.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.login.html" />
+      <item itemvalue="JavaScript Debug.guess.html" />
       <item itemvalue="JavaScript Debug.indexGame.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.wordGame.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="JavaScript Debug.about.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.indexGame.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.guess.html" />
       </list>
     </recent_temporary>
   </component>
@@ -305,39 +288,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713388601460</updated>
     </task>
-    <task id="LOCAL-00006" summary="Refactoring word game code, adding a link to it from mainpage">
+    <task id="LOCAL-00006" summary="added emoji reaction floating feature =&gt; really fun">
       <option name="closed" value="true" />
-      <created>1713393026079</created>
+      <created>1713467292187</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1713393026079</updated>
+      <updated>1713467292187</updated>
     </task>
-    <task id="LOCAL-00007" summary="adding reactions">
+    <task id="LOCAL-00007" summary="Added more customizations to connect 4 game">
       <option name="closed" value="true" />
-      <created>1713415292970</created>
+      <created>1713469970938</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1713415292970</updated>
+      <updated>1713469970938</updated>
     </task>
-    <task id="LOCAL-00008" summary="adding reactions">
-      <option name="closed" value="true" />
-      <created>1713415301827</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713415301827</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1713415330137</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1713415330137</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,10 +328,8 @@
     <MESSAGE value="playgame button fixed on main page" />
     <MESSAGE value="added conditional for game-&gt; must join a room first" />
     <MESSAGE value="added avatars and updated game code to accomodate it" />
-    <MESSAGE value="Refactoring word game code, adding a link to it from mainpage" />
-    <MESSAGE value="Completed scrambled word game functionality" />
-    <MESSAGE value="adding reactions" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="added emoji reaction floating feature =&gt; really fun" />
+    <MESSAGE value="Added more customizations to connect 4 game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more customizations to connect 4 game" />
   </component>
 </project>
