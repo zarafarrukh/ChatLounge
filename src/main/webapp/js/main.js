@@ -260,7 +260,8 @@ document.getElementById("enterButton").addEventListener("click", function() {
 // event listener for calling Play TicTacToe on  button click
 document.getElementById('playTicTacToe').addEventListener('click', function() {
     if (inRoom) {
-        window.location.href = 'indexGame.html';
+        //Open game in a new window
+        window.open('indexGame.html', '_blank');
     } else {
         alert('Please join a room to play Tic Tac Toe!');
     }
@@ -269,7 +270,8 @@ document.getElementById('playTicTacToe').addEventListener('click', function() {
 // event listener for calling Play WordGame on  button click
 document.getElementById('playWordGame').addEventListener('click', function() {
     if (inRoom) {
-        window.location.href = 'wordGame.html';
+        //Open game in a new window
+        window.open('wordGame.html', '_blank');
     } else {
         alert('Please join a room to play Word Game!');
     }

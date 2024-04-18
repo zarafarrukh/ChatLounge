@@ -9,20 +9,21 @@
 </head>
 <body>
 <div id="wrapper">
-    <h1>Welcome to Word Scramble Game</h1>
-    <div class = "box">
+    <h1>Welcome to Word Scramble Game!</h1>
+    <div class="box">
         <h2>Guess the word</h2>
-        <div id = "wordDisplay"></div>
+        <div id="wordDisplay"></div>
         <form id="guessForm">
-            <input type = "text"  id = "guessInput" placeholder = "Enter your guess here" autofocus>
-            <button type = "submit">Submit your guess</button>
+            <input type="text" id="guessInput" placeholder="Enter your guess here" autofocus>
+            <button type="submit">Submit your guess</button>
         </form>
-        <div id = "message"></div>
-        <button id = "restartGame" type="button">Play Again</button>
+        <div id="message"></div>
+        <div id="scoreDisplay">Score: <span id="score">0</span>
+        <button id="restartGame" type="button">Restart</button></div>
     </div>
 </div>
 
-<!--Adding javascript-->
+<!--Adding JavaScript-->
 <script src="js/puzzle.js"></script>
 
 </body>
