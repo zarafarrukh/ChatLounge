@@ -1,14 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
+    background-color: #c5c9fa;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: background-color 0.3s;
 }
+
+.hangman-image {
+    width: 80px;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #D1FFFFFF;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    color: #000; /* Text color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: var(--main-color); /* Darker green background color on hover */
+}
+
 
 .hangman-container {
     text-align: center;
+}
+
+.hangman-container h1 {
+    animation: scaleIn 1s ease forwards; /* Animation */
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
 
 .word-display {

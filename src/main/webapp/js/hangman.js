@@ -7,10 +7,23 @@ const wordDisplay = document.getElementById("wordDisplay");
 const guessesLeft = document.getElementById("guessesLeft");
 const letterInput = document.getElementById("letterInput");
 const guessBtn = document.getElementById("guessBtn");
+const newWordBtn = document.getElementById("newWordBtn");
 const message = document.getElementById("message");
 
 let remainingGuesses = 6;
 guessesLeft.textContent = remainingGuesses;
+
+function resetGame() {
+    console.log("Resetting game...")
+    selectedWord = words[Math.floor(Math.random() * words.length)];
+    guessedWord = Array(selectedWord.length).fill("_");
+    remainingGuesses = 6;
+    guessesLeft.textContent = remainingGuesses;
+    message.textContent = "";
+    updateWordDisplay();
+    guessBtn.disabled = false;
+    letterInput.disabled = false;
+}
 
 function updateWordDisplay() {
     wordDisplay.textContent = guessedWord.join(" ");
@@ -61,3 +74,5 @@ guessBtn.addEventListener("click", function() {
         message.textContent = `You guessed "${letter}".`;
     }
 });
+
+newWordBtn.addEventListener("click", resetGame);
