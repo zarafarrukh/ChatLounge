@@ -22,7 +22,8 @@ Each chat room has a unique code for separate discussions. The server handles us
 
 ## Snake Game 🐍
 - Navigate a snake around the game board to eat food and grow longer.
-- Avoid collisions with walls and the snake's own body to survive and achieve a high score
+- Avoid collisions with walls and the snake's own body to survive and achieve a high score.
+- Customize game by changing color of the snake and its food 
 
 ## Hangman 🪢
 - Players guess the words.
