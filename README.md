@@ -10,26 +10,26 @@ Each chat room has a unique code for separate discussions. The server handles us
 
 # Games: 
 
-## Tic Tac Toe Game
+## Tic Tac Toe Game ❌⭕
 - Players can choose emojis as their game pieces.
 - Use reaction emojis during gameplay for interactive communication, members of the room can send reaction emojis visible to all members inside the game
 - Celebratory animations play upon winning a game and are reset for each game
 
-## Word Game
+## Word Game 🔠
 - Players decipher scrambled words.
 - Submit guesses to win rounds.
 - Enjoy continuous engagement with multiple rounds.
 
-## Snake Game
+## Snake Game 🐍
 - Navigate a snake around the game board to eat food and grow longer.
 - Avoid collisions with walls and the snake's own body to survive and achieve a high score
 
-## Hangman
+## Hangman 🪢
 - Players guess the words.
 - Submit letters to win rounds.
 - Word is revelaed after limited tries.
   
-## Connect 4
+## Connect 4 🔴🟡
 - Players take turns dropping colored discs into a vertical grid.
 - The goal is to connect four of one's own discs vertically, horizontally, or diagonally before the opponent does.
 
@@ -64,7 +64,7 @@ ADD DEMO VIDEO AND MORE SCREENSHOTS HERE:
 4. Start GlassFish server and deploy application on selecting ▶
 
 
-# Developers:
+## Developers:
 ### This endeavor is the result of a collaborative effort harnessing the collective expertise of:
 - Zara Farrukh.
 - Syeda Bisha Fatima.
