@@ -4,7 +4,7 @@
 ## Project Information
 
 ### Step into ChatLounge, where gaming meets great conversation! 
-ChatLounge is a robust chat server featuring multiple chat rooms and __gaming functionality__ powered by the Java WebSocket API. It facilitates seamless real-time communication among users, managing connections efficiently. Users can join existing rooms or create new ones. Moreover, users have the options to play games: Tic Tac Toe and a Word game.
+ChatLounge is a robust chat server featuring multiple chat rooms and __gaming functionality__ powered by the Java WebSocket API. It facilitates seamless real-time communication among users, managing connections efficiently. Users can join existing rooms or create new ones. Moreover, users have the options to play games: Tic Tac Toe, Snake, Connect 4, Hangman and a Word game.
 
 Each chat room has a unique code for separate discussions. The server handles user authentication and authorization. Upon entering a room, users provide a username, receive a welcome message, and can exchange messages with timestamps.
 
@@ -36,9 +36,29 @@ Each chat room has a unique code for separate discussions. The server handles us
 - The goal is to connect four of one's own discs vertically, horizontally, or diagonally before the opponent does.
 
 <p align="center">
-   <img src="chatLounge.png" alt="ChatLounge" width="700">
-   <img src="reactions.png" alt="floating reactions" width="700">
+  <img src="chatLounge.png" alt="ChatLounge" width="700">
+  <br>
+  ChatLounge
+</p>
+
+<p align="center">
+  <img src="reactions.png" alt="floating reactions" width="700">
+  <br>
+  Floating Reactions
+</p>
+
+<p align="center">
   <img src="src/main/webapp/img/connect4demo.png" alt="Connect 4 game" width="700">
+  <br>
+  Connect 4 Game
+</p>
+
+<p align="center">
+  <a href="https://youtu.be/10-ruQ0pcRw">
+    <img src="https://img.youtube.com/vi/10-ruQ0pcRw/0.jpg" alt="Demo Video">
+  </a>
+  <br>
+  Demo Video
 </p>
 
 ## Key Features
